@@ -1,4 +1,4 @@
-# @clawdcc/cvm-benchmark
+# @clawd/cvm-benchmark
 
 Comprehensive benchmarking and performance analysis tools for Claude Code versions managed by CVM.
 
@@ -17,10 +17,10 @@ Comprehensive benchmarking and performance analysis tools for Claude Code versio
 
 ```bash
 # Install via NPM
-npm install -g @clawdcc/cvm-benchmark
+npm install -g @clawd/cvm-benchmark
 
 # Link to CVM plugins directory
-ln -s $(npm root -g)/@clawdcc/cvm-benchmark/index.js ~/.cvm/plugins/benchmark.js
+ln -s $(npm root -g)/@clawd/cvm-benchmark/index.js ~/.cvm/plugins/benchmark.js
 
 # Verify installation
 cvm plugins
@@ -30,7 +30,7 @@ cvm plugins
 
 ```bash
 # Clone into a local directory
-git clone https://github.com/clawdcc/cvm-benchmark.git
+git clone https://github.com/clawd/cvm-benchmark.git
 cd cvm-benchmark
 npm install
 
@@ -180,10 +180,10 @@ module.exports = {
 ### Module API
 
 ```javascript
-const benchmarkVersion = require('@clawdcc/cvm-benchmark/lib/benchmark-version');
-const benchmarkInteractive = require('@clawdcc/cvm-benchmark/lib/benchmark-interactive');
-const compareRuns = require('@clawdcc/cvm-benchmark/lib/compare-runs');
-const comprehensiveSuite = require('@clawdcc/cvm-benchmark/lib/comprehensive-suite');
+const benchmarkVersion = require('@clawd/cvm-benchmark/lib/benchmark-version');
+const benchmarkInteractive = require('@clawd/cvm-benchmark/lib/benchmark-interactive');
+const compareRuns = require('@clawd/cvm-benchmark/lib/compare-runs');
+const comprehensiveSuite = require('@clawd/cvm-benchmark/lib/comprehensive-suite');
 
 // Run benchmarks
 await benchmarkVersion.run({ runs: 3 });
@@ -202,7 +202,7 @@ compareRuns.compare(['1', '2', '3']);
 
 ```bash
 # Clone the repo
-git clone https://github.com/clawdcc/cvm-benchmark.git
+git clone https://github.com/clawd/cvm-benchmark.git
 cd cvm-benchmark
 
 # Install dependencies
@@ -221,7 +221,7 @@ MIT
 
 ## Related Projects
 
-- [@clawdcc/cvm](https://github.com/clawdcc/cvm) - Claude Version Manager
+- [@clawd/cvm](https://github.com/clawd/cvm) - Claude Version Manager
 - [Claude Code](https://claude.com/code) - Official CLI for Claude
 
 ## Credits

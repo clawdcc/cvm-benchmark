@@ -1,0 +1,47 @@
+{
+  "data": {
+    "version": "0.2.119",
+    "results": [
+      {
+        "time": 391,
+        "result": "exited",
+        "reason": "process exited before ready",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "sessionId": null
+      },
+      {
+        "time": 476,
+        "result": "exited",
+        "reason": "process exited before ready",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "sessionId": null
+      },
+      {
+        "time": 483,
+        "result": "exited",
+        "reason": "process exited before ready",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "0.2.119",
+    "avg": 450,
+    "min": 391,
+    "max": 483,
+    "result": "exited"
+  }
+}

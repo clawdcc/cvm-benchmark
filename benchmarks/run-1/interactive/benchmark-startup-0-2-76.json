@@ -1,0 +1,35 @@
+{
+  "data": {
+    "version": "0.2.76",
+    "results": [
+      {
+        "time": 670,
+        "result": "error_detected",
+        "reason": "needs update to 1.0.24",
+        "errorMessage": "needs update to 1.0.24",
+        "sessionId": null
+      },
+      {
+        "time": 720,
+        "result": "error_detected",
+        "reason": "needs update to 1.0.24",
+        "errorMessage": "needs update to 1.0.24",
+        "sessionId": null
+      },
+      {
+        "time": 950,
+        "result": "error_detected",
+        "reason": "needs update to 1.0.24",
+        "errorMessage": "needs update to 1.0.24",
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "0.2.76",
+    "avg": 780,
+    "min": 670,
+    "max": 950,
+    "result": "error_detected"
+  }
+}

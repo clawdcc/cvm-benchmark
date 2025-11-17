@@ -1,0 +1,50 @@
+{
+  "data": {
+    "version": "0.2.83",
+    "results": [
+      {
+        "time": 134,
+        "result": "exited_early",
+        "reason": "process exited before showing prompt",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "exitCode": 1,
+        "sessionId": null
+      },
+      {
+        "time": 143,
+        "result": "exited_early",
+        "reason": "process exited before showing prompt",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "exitCode": 1,
+        "sessionId": null
+      },
+      {
+        "time": 141,
+        "result": "exited_early",
+        "reason": "process exited before showing prompt",
+        "signals": {
+          "bracketedPaste": false,
+          "focusEvents": false,
+          "prompt": false
+        },
+        "exitCode": 1,
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "0.2.83",
+    "avg": 139.33333333333334,
+    "min": 134,
+    "max": 143,
+    "result": "exited_early"
+  }
+}

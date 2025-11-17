@@ -1,0 +1,47 @@
+{
+  "data": {
+    "version": "1.0.40",
+    "results": [
+      {
+        "time": 1314,
+        "result": "ready",
+        "reason": "all terminal signals received and process stable",
+        "signals": {
+          "bracketedPaste": true,
+          "focusEvents": true,
+          "prompt": true
+        },
+        "sessionId": null
+      },
+      {
+        "time": 1314,
+        "result": "ready",
+        "reason": "all terminal signals received and process stable",
+        "signals": {
+          "bracketedPaste": true,
+          "focusEvents": true,
+          "prompt": true
+        },
+        "sessionId": null
+      },
+      {
+        "time": 1305,
+        "result": "ready",
+        "reason": "all terminal signals received and process stable",
+        "signals": {
+          "bracketedPaste": true,
+          "focusEvents": true,
+          "prompt": true
+        },
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "1.0.40",
+    "avg": 1311,
+    "min": 1305,
+    "max": 1314,
+    "result": "ready"
+  }
+}

@@ -1,0 +1,3243 @@
+{
+  "results": [
+    {
+      "version": "0.2.9",
+      "timestamp": "2025-11-16T06:08:08.928Z",
+      "runs": [
+        1887,
+        1643,
+        1684
+      ],
+      "avgTime": 1738,
+      "minTime": 1643,
+      "maxTime": 1887,
+      "stdDev": 107
+    },
+    {
+      "version": "0.2.14",
+      "timestamp": "2025-11-16T06:08:13.656Z",
+      "runs": [
+        1565,
+        1615,
+        1545
+      ],
+      "avgTime": 1575,
+      "minTime": 1545,
+      "maxTime": 1615,
+      "stdDev": 29
+    },
+    {
+      "version": "0.2.18",
+      "timestamp": "2025-11-16T06:08:18.309Z",
+      "runs": [
+        1565,
+        1532,
+        1556
+      ],
+      "avgTime": 1551,
+      "minTime": 1532,
+      "maxTime": 1565,
+      "stdDev": 14
+    },
+    {
+      "version": "0.2.19",
+      "timestamp": "2025-11-16T06:08:23.071Z",
+      "runs": [
+        1665,
+        1579,
+        1518
+      ],
+      "avgTime": 1587,
+      "minTime": 1518,
+      "maxTime": 1665,
+      "stdDev": 60
+    },
+    {
+      "version": "0.2.25",
+      "timestamp": "2025-11-16T06:08:27.528Z",
+      "runs": [
+        1498,
+        1481,
+        1478
+      ],
+      "avgTime": 1486,
+      "minTime": 1478,
+      "maxTime": 1498,
+      "stdDev": 9
+    },
+    {
+      "version": "0.2.27",
+      "timestamp": "2025-11-16T06:08:31.952Z",
+      "runs": [
+        1498,
+        1457,
+        1468
+      ],
+      "avgTime": 1474,
+      "minTime": 1457,
+      "maxTime": 1498,
+      "stdDev": 17
+    },
+    {
+      "version": "0.2.29",
+      "timestamp": "2025-11-16T06:08:36.411Z",
+      "runs": [
+        1473,
+        1494,
+        1492
+      ],
+      "avgTime": 1486,
+      "minTime": 1473,
+      "maxTime": 1494,
+      "stdDev": 9
+    },
+    {
+      "version": "0.2.30",
+      "timestamp": "2025-11-16T06:08:41.155Z",
+      "runs": [
+        1621,
+        1548,
+        1575
+      ],
+      "avgTime": 1581,
+      "minTime": 1548,
+      "maxTime": 1621,
+      "stdDev": 30
+    },
+    {
+      "version": "0.2.31",
+      "timestamp": "2025-11-16T06:08:46.140Z",
+      "runs": [
+        1659,
+        1682,
+        1644
+      ],
+      "avgTime": 1662,
+      "minTime": 1644,
+      "maxTime": 1682,
+      "stdDev": 16
+    },
+    {
+      "version": "0.2.32",
+      "timestamp": "2025-11-16T06:08:51.188Z",
+      "runs": [
+        1687,
+        1668,
+        1693
+      ],
+      "avgTime": 1683,
+      "minTime": 1668,
+      "maxTime": 1693,
+      "stdDev": 11
+    },
+    {
+      "version": "0.2.33",
+      "timestamp": "2025-11-16T06:08:56.262Z",
+      "runs": [
+        1702,
+        1688,
+        1684
+      ],
+      "avgTime": 1691,
+      "minTime": 1684,
+      "maxTime": 1702,
+      "stdDev": 8
+    },
+    {
+      "version": "0.2.34",
+      "timestamp": "2025-11-16T06:09:01.284Z",
+      "runs": [
+        1654,
+        1668,
+        1699
+      ],
+      "avgTime": 1674,
+      "minTime": 1654,
+      "maxTime": 1699,
+      "stdDev": 19
+    },
+    {
+      "version": "0.2.35",
+      "timestamp": "2025-11-16T06:09:06.425Z",
+      "runs": [
+        1759,
+        1698,
+        1683
+      ],
+      "avgTime": 1713,
+      "minTime": 1683,
+      "maxTime": 1759,
+      "stdDev": 33
+    },
+    {
+      "version": "0.2.36",
+      "timestamp": "2025-11-16T06:09:07.309Z",
+      "runs": [
+        298,
+        294,
+        292
+      ],
+      "avgTime": 295,
+      "minTime": 292,
+      "maxTime": 298,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.37",
+      "timestamp": "2025-11-16T06:09:08.452Z",
+      "runs": [
+        303,
+        309,
+        531
+      ],
+      "avgTime": 381,
+      "minTime": 303,
+      "maxTime": 531,
+      "stdDev": 106
+    },
+    {
+      "version": "0.2.38",
+      "timestamp": "2025-11-16T06:09:09.360Z",
+      "runs": [
+        303,
+        307,
+        298
+      ],
+      "avgTime": 303,
+      "minTime": 298,
+      "maxTime": 307,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.39",
+      "timestamp": "2025-11-16T06:09:10.254Z",
+      "runs": [
+        298,
+        299,
+        297
+      ],
+      "avgTime": 298,
+      "minTime": 297,
+      "maxTime": 299,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.40",
+      "timestamp": "2025-11-16T06:09:11.159Z",
+      "runs": [
+        302,
+        299,
+        304
+      ],
+      "avgTime": 302,
+      "minTime": 299,
+      "maxTime": 304,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.41",
+      "timestamp": "2025-11-16T06:09:12.066Z",
+      "runs": [
+        304,
+        300,
+        303
+      ],
+      "avgTime": 302,
+      "minTime": 300,
+      "maxTime": 304,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.42",
+      "timestamp": "2025-11-16T06:09:12.983Z",
+      "runs": [
+        313,
+        300,
+        304
+      ],
+      "avgTime": 306,
+      "minTime": 300,
+      "maxTime": 313,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.43",
+      "timestamp": "2025-11-16T06:09:13.891Z",
+      "runs": [
+        312,
+        303,
+        293
+      ],
+      "avgTime": 303,
+      "minTime": 293,
+      "maxTime": 312,
+      "stdDev": 8
+    },
+    {
+      "version": "0.2.44",
+      "timestamp": "2025-11-16T06:09:14.792Z",
+      "runs": [
+        300,
+        299,
+        302
+      ],
+      "avgTime": 300,
+      "minTime": 299,
+      "maxTime": 302,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.45",
+      "timestamp": "2025-11-16T06:09:15.691Z",
+      "runs": [
+        302,
+        298,
+        299
+      ],
+      "avgTime": 300,
+      "minTime": 298,
+      "maxTime": 302,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.46",
+      "timestamp": "2025-11-16T06:09:16.592Z",
+      "runs": [
+        300,
+        297,
+        304
+      ],
+      "avgTime": 300,
+      "minTime": 297,
+      "maxTime": 304,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.47",
+      "timestamp": "2025-11-16T06:09:17.482Z",
+      "runs": [
+        296,
+        298,
+        296
+      ],
+      "avgTime": 297,
+      "minTime": 296,
+      "maxTime": 298,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.48",
+      "timestamp": "2025-11-16T06:09:18.372Z",
+      "runs": [
+        299,
+        298,
+        293
+      ],
+      "avgTime": 297,
+      "minTime": 293,
+      "maxTime": 299,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.49",
+      "timestamp": "2025-11-16T06:09:19.271Z",
+      "runs": [
+        299,
+        295,
+        304
+      ],
+      "avgTime": 299,
+      "minTime": 295,
+      "maxTime": 304,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.50",
+      "timestamp": "2025-11-16T06:09:20.269Z",
+      "runs": [
+        396,
+        302,
+        300
+      ],
+      "avgTime": 333,
+      "minTime": 300,
+      "maxTime": 396,
+      "stdDev": 45
+    },
+    {
+      "version": "0.2.51",
+      "timestamp": "2025-11-16T06:09:21.182Z",
+      "runs": [
+        307,
+        299,
+        306
+      ],
+      "avgTime": 304,
+      "minTime": 299,
+      "maxTime": 307,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.52",
+      "timestamp": "2025-11-16T06:09:22.081Z",
+      "runs": [
+        302,
+        302,
+        295
+      ],
+      "avgTime": 300,
+      "minTime": 295,
+      "maxTime": 302,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.53",
+      "timestamp": "2025-11-16T06:09:22.972Z",
+      "runs": [
+        299,
+        297,
+        295
+      ],
+      "avgTime": 297,
+      "minTime": 295,
+      "maxTime": 299,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.54",
+      "timestamp": "2025-11-16T06:09:23.897Z",
+      "runs": [
+        313,
+        306,
+        305
+      ],
+      "avgTime": 308,
+      "minTime": 305,
+      "maxTime": 313,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.55",
+      "timestamp": "2025-11-16T06:09:24.955Z",
+      "runs": [
+        309,
+        317,
+        432
+      ],
+      "avgTime": 353,
+      "minTime": 309,
+      "maxTime": 432,
+      "stdDev": 56
+    },
+    {
+      "version": "0.2.56",
+      "timestamp": "2025-11-16T06:09:25.890Z",
+      "runs": [
+        315,
+        309,
+        311
+      ],
+      "avgTime": 312,
+      "minTime": 309,
+      "maxTime": 315,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.57",
+      "timestamp": "2025-11-16T06:09:26.826Z",
+      "runs": [
+        323,
+        306,
+        307
+      ],
+      "avgTime": 312,
+      "minTime": 306,
+      "maxTime": 323,
+      "stdDev": 8
+    },
+    {
+      "version": "0.2.59",
+      "timestamp": "2025-11-16T06:09:27.765Z",
+      "runs": [
+        315,
+        307,
+        315
+      ],
+      "avgTime": 312,
+      "minTime": 307,
+      "maxTime": 315,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.60",
+      "timestamp": "2025-11-16T06:09:28.811Z",
+      "runs": [
+        441,
+        299,
+        306
+      ],
+      "avgTime": 349,
+      "minTime": 299,
+      "maxTime": 441,
+      "stdDev": 65
+    },
+    {
+      "version": "0.2.61",
+      "timestamp": "2025-11-16T06:09:29.741Z",
+      "runs": [
+        307,
+        304,
+        319
+      ],
+      "avgTime": 310,
+      "minTime": 304,
+      "maxTime": 319,
+      "stdDev": 6
+    },
+    {
+      "version": "0.2.62",
+      "timestamp": "2025-11-16T06:09:30.874Z",
+      "runs": [
+        504,
+        317,
+        312
+      ],
+      "avgTime": 378,
+      "minTime": 312,
+      "maxTime": 504,
+      "stdDev": 89
+    },
+    {
+      "version": "0.2.64",
+      "timestamp": "2025-11-16T06:09:31.795Z",
+      "runs": [
+        308,
+        311,
+        302
+      ],
+      "avgTime": 307,
+      "minTime": 302,
+      "maxTime": 311,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.65",
+      "timestamp": "2025-11-16T06:09:32.714Z",
+      "runs": [
+        304,
+        307,
+        308
+      ],
+      "avgTime": 306,
+      "minTime": 304,
+      "maxTime": 308,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.66",
+      "timestamp": "2025-11-16T06:09:33.699Z",
+      "runs": [
+        317,
+        361,
+        307
+      ],
+      "avgTime": 328,
+      "minTime": 307,
+      "maxTime": 361,
+      "stdDev": 23
+    },
+    {
+      "version": "0.2.67",
+      "timestamp": "2025-11-16T06:09:34.623Z",
+      "runs": [
+        315,
+        303,
+        306
+      ],
+      "avgTime": 308,
+      "minTime": 303,
+      "maxTime": 315,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.68",
+      "timestamp": "2025-11-16T06:09:35.728Z",
+      "runs": [
+        449,
+        353,
+        303
+      ],
+      "avgTime": 368,
+      "minTime": 303,
+      "maxTime": 449,
+      "stdDev": 61
+    },
+    {
+      "version": "0.2.69",
+      "timestamp": "2025-11-16T06:09:36.654Z",
+      "runs": [
+        310,
+        308,
+        308
+      ],
+      "avgTime": 309,
+      "minTime": 308,
+      "maxTime": 310,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.70",
+      "timestamp": "2025-11-16T06:09:37.590Z",
+      "runs": [
+        314,
+        311,
+        311
+      ],
+      "avgTime": 312,
+      "minTime": 311,
+      "maxTime": 314,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.72",
+      "timestamp": "2025-11-16T06:09:38.521Z",
+      "runs": [
+        314,
+        308,
+        309
+      ],
+      "avgTime": 310,
+      "minTime": 308,
+      "maxTime": 314,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.73",
+      "timestamp": "2025-11-16T06:09:39.454Z",
+      "runs": [
+        313,
+        311,
+        309
+      ],
+      "avgTime": 311,
+      "minTime": 309,
+      "maxTime": 313,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.74",
+      "timestamp": "2025-11-16T06:09:40.384Z",
+      "runs": [
+        314,
+        309,
+        307
+      ],
+      "avgTime": 310,
+      "minTime": 307,
+      "maxTime": 314,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.76",
+      "timestamp": "2025-11-16T06:09:41.394Z",
+      "runs": [
+        340,
+        335,
+        335
+      ],
+      "avgTime": 337,
+      "minTime": 335,
+      "maxTime": 340,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.77",
+      "timestamp": "2025-11-16T06:09:42.404Z",
+      "runs": [
+        340,
+        338,
+        332
+      ],
+      "avgTime": 337,
+      "minTime": 332,
+      "maxTime": 340,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.78",
+      "timestamp": "2025-11-16T06:09:43.416Z",
+      "runs": [
+        339,
+        338,
+        335
+      ],
+      "avgTime": 337,
+      "minTime": 335,
+      "maxTime": 339,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.79",
+      "timestamp": "2025-11-16T06:09:44.424Z",
+      "runs": [
+        341,
+        333,
+        334
+      ],
+      "avgTime": 336,
+      "minTime": 333,
+      "maxTime": 341,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.80",
+      "timestamp": "2025-11-16T06:09:45.445Z",
+      "runs": [
+        343,
+        343,
+        335
+      ],
+      "avgTime": 340,
+      "minTime": 335,
+      "maxTime": 343,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.81",
+      "timestamp": "2025-11-16T06:09:46.499Z",
+      "runs": [
+        331,
+        325,
+        398
+      ],
+      "avgTime": 351,
+      "minTime": 325,
+      "maxTime": 398,
+      "stdDev": 33
+    },
+    {
+      "version": "0.2.83",
+      "timestamp": "2025-11-17T02:35:55.247Z",
+      "runs": [
+        121,
+        112,
+        112
+      ],
+      "avgTime": 115,
+      "minTime": 112,
+      "maxTime": 121,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.84",
+      "timestamp": "2025-11-16T06:09:47.773Z",
+      "runs": [
+        374,
+        366,
+        370
+      ],
+      "avgTime": 370,
+      "minTime": 366,
+      "maxTime": 374,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.85",
+      "timestamp": "2025-11-16T06:09:48.878Z",
+      "runs": [
+        372,
+        368,
+        365
+      ],
+      "avgTime": 368,
+      "minTime": 365,
+      "maxTime": 372,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.86",
+      "timestamp": "2025-11-16T06:09:50.054Z",
+      "runs": [
+        377,
+        427,
+        372
+      ],
+      "avgTime": 392,
+      "minTime": 372,
+      "maxTime": 427,
+      "stdDev": 25
+    },
+    {
+      "version": "0.2.89",
+      "timestamp": "2025-11-16T06:09:51.084Z",
+      "runs": [
+        349,
+        337,
+        344
+      ],
+      "avgTime": 343,
+      "minTime": 337,
+      "maxTime": 349,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.90",
+      "timestamp": "2025-11-16T06:09:52.278Z",
+      "runs": [
+        512,
+        338,
+        344
+      ],
+      "avgTime": 398,
+      "minTime": 338,
+      "maxTime": 512,
+      "stdDev": 81
+    },
+    {
+      "version": "0.2.91",
+      "timestamp": "2025-11-16T06:09:53.295Z",
+      "runs": [
+        344,
+        336,
+        337
+      ],
+      "avgTime": 339,
+      "minTime": 336,
+      "maxTime": 344,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.92",
+      "timestamp": "2025-11-16T06:09:54.316Z",
+      "runs": [
+        346,
+        340,
+        335
+      ],
+      "avgTime": 340,
+      "minTime": 335,
+      "maxTime": 346,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.93",
+      "timestamp": "2025-11-16T06:09:55.443Z",
+      "runs": [
+        359,
+        364,
+        403
+      ],
+      "avgTime": 375,
+      "minTime": 359,
+      "maxTime": 403,
+      "stdDev": 20
+    },
+    {
+      "version": "0.2.94",
+      "timestamp": "2025-11-16T06:09:56.492Z",
+      "runs": [
+        352,
+        348,
+        349
+      ],
+      "avgTime": 350,
+      "minTime": 348,
+      "maxTime": 352,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.96",
+      "timestamp": "2025-11-16T06:09:57.538Z",
+      "runs": [
+        355,
+        347,
+        344
+      ],
+      "avgTime": 349,
+      "minTime": 344,
+      "maxTime": 355,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.97",
+      "timestamp": "2025-11-16T06:09:58.587Z",
+      "runs": [
+        354,
+        348,
+        347
+      ],
+      "avgTime": 350,
+      "minTime": 347,
+      "maxTime": 354,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.98",
+      "timestamp": "2025-11-16T06:09:59.639Z",
+      "runs": [
+        356,
+        346,
+        350
+      ],
+      "avgTime": 351,
+      "minTime": 346,
+      "maxTime": 356,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.99",
+      "timestamp": "2025-11-16T06:10:00.695Z",
+      "runs": [
+        357,
+        353,
+        346
+      ],
+      "avgTime": 352,
+      "minTime": 346,
+      "maxTime": 357,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.100",
+      "timestamp": "2025-11-16T06:10:01.739Z",
+      "runs": [
+        353,
+        347,
+        344
+      ],
+      "avgTime": 348,
+      "minTime": 344,
+      "maxTime": 353,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.101",
+      "timestamp": "2025-11-16T06:10:02.765Z",
+      "runs": [
+        347,
+        343,
+        335
+      ],
+      "avgTime": 342,
+      "minTime": 335,
+      "maxTime": 347,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.102",
+      "timestamp": "2025-11-16T06:10:03.789Z",
+      "runs": [
+        346,
+        338,
+        340
+      ],
+      "avgTime": 341,
+      "minTime": 338,
+      "maxTime": 346,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.103",
+      "timestamp": "2025-11-16T06:10:04.812Z",
+      "runs": [
+        349,
+        334,
+        340
+      ],
+      "avgTime": 341,
+      "minTime": 334,
+      "maxTime": 349,
+      "stdDev": 6
+    },
+    {
+      "version": "0.2.104",
+      "timestamp": "2025-11-16T06:10:05.850Z",
+      "runs": [
+        347,
+        342,
+        349
+      ],
+      "avgTime": 346,
+      "minTime": 342,
+      "maxTime": 349,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.105",
+      "timestamp": "2025-11-16T06:10:06.896Z",
+      "runs": [
+        351,
+        342,
+        353
+      ],
+      "avgTime": 349,
+      "minTime": 342,
+      "maxTime": 353,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.106",
+      "timestamp": "2025-11-16T06:10:07.944Z",
+      "runs": [
+        354,
+        347,
+        347
+      ],
+      "avgTime": 349,
+      "minTime": 347,
+      "maxTime": 354,
+      "stdDev": 3
+    },
+    {
+      "version": "0.2.107",
+      "timestamp": "2025-11-16T06:10:08.981Z",
+      "runs": [
+        350,
+        338,
+        349
+      ],
+      "avgTime": 346,
+      "minTime": 338,
+      "maxTime": 350,
+      "stdDev": 5
+    },
+    {
+      "version": "0.2.108",
+      "timestamp": "2025-11-16T06:10:10.021Z",
+      "runs": [
+        352,
+        345,
+        343
+      ],
+      "avgTime": 347,
+      "minTime": 343,
+      "maxTime": 352,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.109",
+      "timestamp": "2025-11-16T06:10:11.060Z",
+      "runs": [
+        352,
+        344,
+        343
+      ],
+      "avgTime": 346,
+      "minTime": 343,
+      "maxTime": 352,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.113",
+      "timestamp": "2025-11-16T06:10:12.058Z",
+      "runs": [
+        333,
+        333,
+        332
+      ],
+      "avgTime": 333,
+      "minTime": 332,
+      "maxTime": 333,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.114",
+      "timestamp": "2025-11-16T06:10:13.043Z",
+      "runs": [
+        331,
+        327,
+        326
+      ],
+      "avgTime": 328,
+      "minTime": 326,
+      "maxTime": 331,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.115",
+      "timestamp": "2025-11-16T06:10:14.034Z",
+      "runs": [
+        331,
+        332,
+        328
+      ],
+      "avgTime": 330,
+      "minTime": 328,
+      "maxTime": 332,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.116",
+      "timestamp": "2025-11-16T06:10:15.028Z",
+      "runs": [
+        334,
+        329,
+        331
+      ],
+      "avgTime": 331,
+      "minTime": 329,
+      "maxTime": 334,
+      "stdDev": 2
+    },
+    {
+      "version": "0.2.117",
+      "timestamp": "2025-11-16T06:10:16.026Z",
+      "runs": [
+        334,
+        332,
+        332
+      ],
+      "avgTime": 333,
+      "minTime": 332,
+      "maxTime": 334,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.118",
+      "timestamp": "2025-11-16T06:10:17.019Z",
+      "runs": [
+        333,
+        330,
+        330
+      ],
+      "avgTime": 331,
+      "minTime": 330,
+      "maxTime": 333,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.119",
+      "timestamp": "2025-11-16T06:10:18.468Z",
+      "runs": [
+        493,
+        480,
+        475
+      ],
+      "avgTime": 483,
+      "minTime": 475,
+      "maxTime": 493,
+      "stdDev": 8
+    },
+    {
+      "version": "0.2.120",
+      "timestamp": "2025-11-16T06:10:19.461Z",
+      "runs": [
+        336,
+        330,
+        326
+      ],
+      "avgTime": 331,
+      "minTime": 326,
+      "maxTime": 336,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.122",
+      "timestamp": "2025-11-16T06:10:20.452Z",
+      "runs": [
+        332,
+        329,
+        330
+      ],
+      "avgTime": 330,
+      "minTime": 329,
+      "maxTime": 332,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.123",
+      "timestamp": "2025-11-16T06:10:21.490Z",
+      "runs": [
+        348,
+        349,
+        341
+      ],
+      "avgTime": 346,
+      "minTime": 341,
+      "maxTime": 349,
+      "stdDev": 4
+    },
+    {
+      "version": "0.2.124",
+      "timestamp": "2025-11-16T06:10:22.519Z",
+      "runs": [
+        343,
+        344,
+        342
+      ],
+      "avgTime": 343,
+      "minTime": 342,
+      "maxTime": 344,
+      "stdDev": 1
+    },
+    {
+      "version": "0.2.125",
+      "timestamp": "2025-11-16T06:10:23.599Z",
+      "runs": [
+        356,
+        368,
+        356
+      ],
+      "avgTime": 360,
+      "minTime": 356,
+      "maxTime": 368,
+      "stdDev": 6
+    },
+    {
+      "version": "0.2.126",
+      "timestamp": "2025-11-16T06:10:24.672Z",
+      "runs": [
+        359,
+        360,
+        353
+      ],
+      "avgTime": 357,
+      "minTime": 353,
+      "maxTime": 360,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.0",
+      "timestamp": "2025-11-16T06:10:25.744Z",
+      "runs": [
+        365,
+        356,
+        351
+      ],
+      "avgTime": 357,
+      "minTime": 351,
+      "maxTime": 365,
+      "stdDev": 6
+    },
+    {
+      "version": "1.0.1",
+      "timestamp": "2025-11-16T06:10:26.810Z",
+      "runs": [
+        360,
+        354,
+        352
+      ],
+      "avgTime": 355,
+      "minTime": 352,
+      "maxTime": 360,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.2",
+      "timestamp": "2025-11-16T06:10:27.877Z",
+      "runs": [
+        359,
+        358,
+        350
+      ],
+      "avgTime": 356,
+      "minTime": 350,
+      "maxTime": 359,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.3",
+      "timestamp": "2025-11-16T06:10:28.952Z",
+      "runs": [
+        361,
+        358,
+        356
+      ],
+      "avgTime": 358,
+      "minTime": 356,
+      "maxTime": 361,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.4",
+      "timestamp": "2025-11-16T06:10:30.014Z",
+      "runs": [
+        355,
+        350,
+        356
+      ],
+      "avgTime": 354,
+      "minTime": 350,
+      "maxTime": 356,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.5",
+      "timestamp": "2025-11-16T06:10:31.088Z",
+      "runs": [
+        358,
+        357,
+        359
+      ],
+      "avgTime": 358,
+      "minTime": 357,
+      "maxTime": 359,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.6",
+      "timestamp": "2025-11-16T06:10:32.175Z",
+      "runs": [
+        357,
+        372,
+        358
+      ],
+      "avgTime": 362,
+      "minTime": 357,
+      "maxTime": 372,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.7",
+      "timestamp": "2025-11-16T06:10:33.278Z",
+      "runs": [
+        372,
+        363,
+        367
+      ],
+      "avgTime": 367,
+      "minTime": 363,
+      "maxTime": 372,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.8",
+      "timestamp": "2025-11-16T06:10:34.370Z",
+      "runs": [
+        370,
+        359,
+        363
+      ],
+      "avgTime": 364,
+      "minTime": 359,
+      "maxTime": 370,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.9",
+      "timestamp": "2025-11-16T06:10:35.481Z",
+      "runs": [
+        375,
+        369,
+        366
+      ],
+      "avgTime": 370,
+      "minTime": 366,
+      "maxTime": 375,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.10",
+      "timestamp": "2025-11-16T06:10:36.577Z",
+      "runs": [
+        369,
+        364,
+        363
+      ],
+      "avgTime": 365,
+      "minTime": 363,
+      "maxTime": 369,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.11",
+      "timestamp": "2025-11-16T06:10:37.692Z",
+      "runs": [
+        376,
+        364,
+        375
+      ],
+      "avgTime": 372,
+      "minTime": 364,
+      "maxTime": 376,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.14",
+      "timestamp": "2025-11-16T06:10:38.800Z",
+      "runs": [
+        373,
+        370,
+        365
+      ],
+      "avgTime": 369,
+      "minTime": 365,
+      "maxTime": 373,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.15",
+      "timestamp": "2025-11-16T06:10:39.932Z",
+      "runs": [
+        377,
+        375,
+        380
+      ],
+      "avgTime": 377,
+      "minTime": 375,
+      "maxTime": 380,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.16",
+      "timestamp": "2025-11-16T06:10:41.059Z",
+      "runs": [
+        372,
+        380,
+        375
+      ],
+      "avgTime": 376,
+      "minTime": 372,
+      "maxTime": 380,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.17",
+      "timestamp": "2025-11-16T06:10:42.205Z",
+      "runs": [
+        386,
+        378,
+        382
+      ],
+      "avgTime": 382,
+      "minTime": 378,
+      "maxTime": 386,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.18",
+      "timestamp": "2025-11-16T06:10:43.335Z",
+      "runs": [
+        377,
+        378,
+        374
+      ],
+      "avgTime": 376,
+      "minTime": 374,
+      "maxTime": 378,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.19",
+      "timestamp": "2025-11-16T06:10:44.482Z",
+      "runs": [
+        389,
+        377,
+        380
+      ],
+      "avgTime": 382,
+      "minTime": 377,
+      "maxTime": 389,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.20",
+      "timestamp": "2025-11-16T06:10:45.646Z",
+      "runs": [
+        388,
+        388,
+        388
+      ],
+      "avgTime": 388,
+      "minTime": 388,
+      "maxTime": 388,
+      "stdDev": 0
+    },
+    {
+      "version": "1.0.21",
+      "timestamp": "2025-11-16T06:10:46.803Z",
+      "runs": [
+        379,
+        379,
+        399
+      ],
+      "avgTime": 386,
+      "minTime": 379,
+      "maxTime": 399,
+      "stdDev": 9
+    },
+    {
+      "version": "1.0.22",
+      "timestamp": "2025-11-16T06:10:47.956Z",
+      "runs": [
+        384,
+        380,
+        389
+      ],
+      "avgTime": 384,
+      "minTime": 380,
+      "maxTime": 389,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.23",
+      "timestamp": "2025-11-16T06:10:49.129Z",
+      "runs": [
+        398,
+        390,
+        385
+      ],
+      "avgTime": 391,
+      "minTime": 385,
+      "maxTime": 398,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.24",
+      "timestamp": "2025-11-16T06:10:50.712Z",
+      "runs": [
+        556,
+        629,
+        397
+      ],
+      "avgTime": 527,
+      "minTime": 397,
+      "maxTime": 629,
+      "stdDev": 97
+    },
+    {
+      "version": "1.0.25",
+      "timestamp": "2025-11-16T06:10:51.944Z",
+      "runs": [
+        413,
+        417,
+        402
+      ],
+      "avgTime": 411,
+      "minTime": 402,
+      "maxTime": 417,
+      "stdDev": 6
+    },
+    {
+      "version": "1.0.26",
+      "timestamp": "2025-11-16T06:10:53.145Z",
+      "runs": [
+        401,
+        401,
+        398
+      ],
+      "avgTime": 400,
+      "minTime": 398,
+      "maxTime": 401,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.27",
+      "timestamp": "2025-11-16T06:10:54.343Z",
+      "runs": [
+        404,
+        400,
+        394
+      ],
+      "avgTime": 399,
+      "minTime": 394,
+      "maxTime": 404,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.28",
+      "timestamp": "2025-11-16T06:10:55.624Z",
+      "runs": [
+        402,
+        472,
+        407
+      ],
+      "avgTime": 427,
+      "minTime": 402,
+      "maxTime": 472,
+      "stdDev": 32
+    },
+    {
+      "version": "1.0.29",
+      "timestamp": "2025-11-16T06:10:56.856Z",
+      "runs": [
+        413,
+        410,
+        409
+      ],
+      "avgTime": 411,
+      "minTime": 409,
+      "maxTime": 413,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.30",
+      "timestamp": "2025-11-16T06:10:58.084Z",
+      "runs": [
+        416,
+        404,
+        408
+      ],
+      "avgTime": 409,
+      "minTime": 404,
+      "maxTime": 416,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.31",
+      "timestamp": "2025-11-16T06:10:59.293Z",
+      "runs": [
+        403,
+        405,
+        401
+      ],
+      "avgTime": 403,
+      "minTime": 401,
+      "maxTime": 405,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.32",
+      "timestamp": "2025-11-16T06:11:00.716Z",
+      "runs": [
+        403,
+        489,
+        530
+      ],
+      "avgTime": 474,
+      "minTime": 403,
+      "maxTime": 530,
+      "stdDev": 53
+    },
+    {
+      "version": "1.0.33",
+      "timestamp": "2025-11-16T06:11:01.943Z",
+      "runs": [
+        414,
+        406,
+        407
+      ],
+      "avgTime": 409,
+      "minTime": 406,
+      "maxTime": 414,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.34",
+      "timestamp": "2025-11-16T06:11:03.154Z",
+      "runs": [
+        403,
+        406,
+        402
+      ],
+      "avgTime": 404,
+      "minTime": 402,
+      "maxTime": 406,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.35",
+      "timestamp": "2025-11-16T06:11:04.391Z",
+      "runs": [
+        416,
+        410,
+        411
+      ],
+      "avgTime": 412,
+      "minTime": 410,
+      "maxTime": 416,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.36",
+      "timestamp": "2025-11-16T06:11:05.842Z",
+      "runs": [
+        470,
+        466,
+        515
+      ],
+      "avgTime": 484,
+      "minTime": 466,
+      "maxTime": 515,
+      "stdDev": 22
+    },
+    {
+      "version": "1.0.37",
+      "timestamp": "2025-11-16T06:11:07.287Z",
+      "runs": [
+        517,
+        457,
+        471
+      ],
+      "avgTime": 482,
+      "minTime": 457,
+      "maxTime": 517,
+      "stdDev": 26
+    },
+    {
+      "version": "1.0.38",
+      "timestamp": "2025-11-16T06:11:08.687Z",
+      "runs": [
+        482,
+        464,
+        454
+      ],
+      "avgTime": 467,
+      "minTime": 454,
+      "maxTime": 482,
+      "stdDev": 12
+    },
+    {
+      "version": "1.0.39",
+      "timestamp": "2025-11-16T06:11:10.088Z",
+      "runs": [
+        474,
+        469,
+        458
+      ],
+      "avgTime": 467,
+      "minTime": 458,
+      "maxTime": 474,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.40",
+      "timestamp": "2025-11-16T06:11:11.566Z",
+      "runs": [
+        470,
+        456,
+        551
+      ],
+      "avgTime": 492,
+      "minTime": 456,
+      "maxTime": 551,
+      "stdDev": 42
+    },
+    {
+      "version": "1.0.41",
+      "timestamp": "2025-11-16T06:11:12.979Z",
+      "runs": [
+        474,
+        471,
+        468
+      ],
+      "avgTime": 471,
+      "minTime": 468,
+      "maxTime": 474,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.42",
+      "timestamp": "2025-11-16T06:11:14.383Z",
+      "runs": [
+        466,
+        474,
+        464
+      ],
+      "avgTime": 468,
+      "minTime": 464,
+      "maxTime": 474,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.43",
+      "timestamp": "2025-11-16T06:11:15.770Z",
+      "runs": [
+        465,
+        462,
+        460
+      ],
+      "avgTime": 462,
+      "minTime": 460,
+      "maxTime": 465,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.44",
+      "timestamp": "2025-11-16T06:11:17.187Z",
+      "runs": [
+        478,
+        471,
+        468
+      ],
+      "avgTime": 472,
+      "minTime": 468,
+      "maxTime": 478,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.45",
+      "timestamp": "2025-11-16T06:11:18.678Z",
+      "runs": [
+        549,
+        470,
+        472
+      ],
+      "avgTime": 497,
+      "minTime": 470,
+      "maxTime": 549,
+      "stdDev": 37
+    },
+    {
+      "version": "1.0.46",
+      "timestamp": "2025-11-16T06:11:20.081Z",
+      "runs": [
+        471,
+        469,
+        463
+      ],
+      "avgTime": 468,
+      "minTime": 463,
+      "maxTime": 471,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.47",
+      "timestamp": "2025-11-16T06:11:21.489Z",
+      "runs": [
+        479,
+        463,
+        466
+      ],
+      "avgTime": 469,
+      "minTime": 463,
+      "maxTime": 479,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.48",
+      "timestamp": "2025-11-16T06:11:23.120Z",
+      "runs": [
+        473,
+        692,
+        466
+      ],
+      "avgTime": 544,
+      "minTime": 466,
+      "maxTime": 692,
+      "stdDev": 105
+    },
+    {
+      "version": "1.0.49",
+      "timestamp": "2025-11-16T06:11:24.526Z",
+      "runs": [
+        467,
+        471,
+        468
+      ],
+      "avgTime": 469,
+      "minTime": 467,
+      "maxTime": 471,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.50",
+      "timestamp": "2025-11-16T06:11:25.946Z",
+      "runs": [
+        469,
+        473,
+        478
+      ],
+      "avgTime": 473,
+      "minTime": 469,
+      "maxTime": 478,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.51",
+      "timestamp": "2025-11-16T06:11:27.503Z",
+      "runs": [
+        474,
+        477,
+        606
+      ],
+      "avgTime": 519,
+      "minTime": 474,
+      "maxTime": 606,
+      "stdDev": 62
+    },
+    {
+      "version": "1.0.52",
+      "timestamp": "2025-11-16T06:11:28.906Z",
+      "runs": [
+        473,
+        467,
+        463
+      ],
+      "avgTime": 468,
+      "minTime": 463,
+      "maxTime": 473,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.53",
+      "timestamp": "2025-11-16T06:11:30.357Z",
+      "runs": [
+        485,
+        479,
+        487
+      ],
+      "avgTime": 484,
+      "minTime": 479,
+      "maxTime": 487,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.54",
+      "timestamp": "2025-11-16T06:11:31.827Z",
+      "runs": [
+        484,
+        489,
+        497
+      ],
+      "avgTime": 490,
+      "minTime": 484,
+      "maxTime": 497,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.55",
+      "timestamp": "2025-11-16T06:11:33.322Z",
+      "runs": [
+        490,
+        518,
+        487
+      ],
+      "avgTime": 498,
+      "minTime": 487,
+      "maxTime": 518,
+      "stdDev": 14
+    },
+    {
+      "version": "1.0.56",
+      "timestamp": "2025-11-16T06:11:34.840Z",
+      "runs": [
+        515,
+        499,
+        504
+      ],
+      "avgTime": 506,
+      "minTime": 499,
+      "maxTime": 515,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.57",
+      "timestamp": "2025-11-16T06:11:36.347Z",
+      "runs": [
+        506,
+        498,
+        503
+      ],
+      "avgTime": 502,
+      "minTime": 498,
+      "maxTime": 506,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.58",
+      "timestamp": "2025-11-16T06:11:37.889Z",
+      "runs": [
+        504,
+        505,
+        533
+      ],
+      "avgTime": 514,
+      "minTime": 504,
+      "maxTime": 533,
+      "stdDev": 13
+    },
+    {
+      "version": "1.0.59",
+      "timestamp": "2025-11-16T06:11:39.421Z",
+      "runs": [
+        510,
+        511,
+        511
+      ],
+      "avgTime": 511,
+      "minTime": 510,
+      "maxTime": 511,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.60",
+      "timestamp": "2025-11-16T06:11:40.941Z",
+      "runs": [
+        506,
+        503,
+        511
+      ],
+      "avgTime": 507,
+      "minTime": 503,
+      "maxTime": 511,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.61",
+      "timestamp": "2025-11-16T06:11:42.478Z",
+      "runs": [
+        513,
+        508,
+        516
+      ],
+      "avgTime": 512,
+      "minTime": 508,
+      "maxTime": 516,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.62",
+      "timestamp": "2025-11-16T06:11:44.037Z",
+      "runs": [
+        516,
+        524,
+        518
+      ],
+      "avgTime": 519,
+      "minTime": 516,
+      "maxTime": 524,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.63",
+      "timestamp": "2025-11-16T06:11:45.581Z",
+      "runs": [
+        518,
+        505,
+        520
+      ],
+      "avgTime": 514,
+      "minTime": 505,
+      "maxTime": 520,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.64",
+      "timestamp": "2025-11-16T06:11:47.145Z",
+      "runs": [
+        527,
+        527,
+        510
+      ],
+      "avgTime": 521,
+      "minTime": 510,
+      "maxTime": 527,
+      "stdDev": 8
+    },
+    {
+      "version": "1.0.65",
+      "timestamp": "2025-11-16T06:11:48.677Z",
+      "runs": [
+        509,
+        510,
+        513
+      ],
+      "avgTime": 511,
+      "minTime": 509,
+      "maxTime": 513,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.66",
+      "timestamp": "2025-11-16T06:11:50.281Z",
+      "runs": [
+        524,
+        567,
+        513
+      ],
+      "avgTime": 535,
+      "minTime": 513,
+      "maxTime": 567,
+      "stdDev": 23
+    },
+    {
+      "version": "1.0.67",
+      "timestamp": "2025-11-16T06:11:51.799Z",
+      "runs": [
+        509,
+        505,
+        504
+      ],
+      "avgTime": 506,
+      "minTime": 504,
+      "maxTime": 509,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.68",
+      "timestamp": "2025-11-16T06:11:53.339Z",
+      "runs": [
+        520,
+        514,
+        506
+      ],
+      "avgTime": 513,
+      "minTime": 506,
+      "maxTime": 520,
+      "stdDev": 6
+    },
+    {
+      "version": "1.0.69",
+      "timestamp": "2025-11-16T06:11:54.866Z",
+      "runs": [
+        515,
+        506,
+        506
+      ],
+      "avgTime": 509,
+      "minTime": 506,
+      "maxTime": 515,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.70",
+      "timestamp": "2025-11-16T06:11:56.360Z",
+      "runs": [
+        500,
+        497,
+        496
+      ],
+      "avgTime": 498,
+      "minTime": 496,
+      "maxTime": 500,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.71",
+      "timestamp": "2025-11-16T06:11:57.857Z",
+      "runs": [
+        499,
+        494,
+        504
+      ],
+      "avgTime": 499,
+      "minTime": 494,
+      "maxTime": 504,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.72",
+      "timestamp": "2025-11-16T06:11:59.354Z",
+      "runs": [
+        498,
+        497,
+        502
+      ],
+      "avgTime": 499,
+      "minTime": 497,
+      "maxTime": 502,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.73",
+      "timestamp": "2025-11-16T06:12:00.860Z",
+      "runs": [
+        498,
+        499,
+        509
+      ],
+      "avgTime": 502,
+      "minTime": 498,
+      "maxTime": 509,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.74",
+      "timestamp": "2025-11-16T06:12:02.394Z",
+      "runs": [
+        507,
+        506,
+        521
+      ],
+      "avgTime": 511,
+      "minTime": 506,
+      "maxTime": 521,
+      "stdDev": 7
+    },
+    {
+      "version": "1.0.76",
+      "timestamp": "2025-11-16T06:12:03.954Z",
+      "runs": [
+        516,
+        523,
+        521
+      ],
+      "avgTime": 520,
+      "minTime": 516,
+      "maxTime": 523,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.77",
+      "timestamp": "2025-11-16T06:12:05.478Z",
+      "runs": [
+        512,
+        507,
+        505
+      ],
+      "avgTime": 508,
+      "minTime": 505,
+      "maxTime": 512,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.78",
+      "timestamp": "2025-11-16T06:12:07.006Z",
+      "runs": [
+        505,
+        506,
+        516
+      ],
+      "avgTime": 509,
+      "minTime": 505,
+      "maxTime": 516,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.79",
+      "timestamp": "2025-11-16T06:12:08.528Z",
+      "runs": [
+        513,
+        503,
+        505
+      ],
+      "avgTime": 507,
+      "minTime": 503,
+      "maxTime": 513,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.80",
+      "timestamp": "2025-11-16T06:12:10.047Z",
+      "runs": [
+        513,
+        502,
+        504
+      ],
+      "avgTime": 506,
+      "minTime": 502,
+      "maxTime": 513,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.81",
+      "timestamp": "2025-11-16T06:12:11.546Z",
+      "runs": [
+        498,
+        507,
+        494
+      ],
+      "avgTime": 500,
+      "minTime": 494,
+      "maxTime": 507,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.82",
+      "timestamp": "2025-11-16T06:12:13.052Z",
+      "runs": [
+        506,
+        497,
+        503
+      ],
+      "avgTime": 502,
+      "minTime": 497,
+      "maxTime": 506,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.83",
+      "timestamp": "2025-11-16T06:12:14.561Z",
+      "runs": [
+        503,
+        504,
+        502
+      ],
+      "avgTime": 503,
+      "minTime": 502,
+      "maxTime": 504,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.84",
+      "timestamp": "2025-11-16T06:12:16.125Z",
+      "runs": [
+        524,
+        519,
+        521
+      ],
+      "avgTime": 521,
+      "minTime": 519,
+      "maxTime": 524,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.85",
+      "timestamp": "2025-11-16T06:12:17.670Z",
+      "runs": [
+        520,
+        521,
+        504
+      ],
+      "avgTime": 515,
+      "minTime": 504,
+      "maxTime": 521,
+      "stdDev": 8
+    },
+    {
+      "version": "1.0.86",
+      "timestamp": "2025-11-16T06:12:19.165Z",
+      "runs": [
+        498,
+        499,
+        498
+      ],
+      "avgTime": 498,
+      "minTime": 498,
+      "maxTime": 499,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.87",
+      "timestamp": "2025-11-16T06:12:20.699Z",
+      "runs": [
+        498,
+        513,
+        523
+      ],
+      "avgTime": 511,
+      "minTime": 498,
+      "maxTime": 523,
+      "stdDev": 10
+    },
+    {
+      "version": "1.0.88",
+      "timestamp": "2025-11-16T06:12:22.221Z",
+      "runs": [
+        519,
+        502,
+        501
+      ],
+      "avgTime": 507,
+      "minTime": 501,
+      "maxTime": 519,
+      "stdDev": 8
+    },
+    {
+      "version": "1.0.89",
+      "timestamp": "2025-11-16T06:12:23.724Z",
+      "runs": [
+        506,
+        495,
+        502
+      ],
+      "avgTime": 501,
+      "minTime": 495,
+      "maxTime": 506,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.90",
+      "timestamp": "2025-11-16T06:12:25.226Z",
+      "runs": [
+        506,
+        498,
+        498
+      ],
+      "avgTime": 501,
+      "minTime": 498,
+      "maxTime": 506,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.91",
+      "timestamp": "2025-11-16T06:12:26.717Z",
+      "runs": [
+        500,
+        494,
+        497
+      ],
+      "avgTime": 497,
+      "minTime": 494,
+      "maxTime": 500,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.92",
+      "timestamp": "2025-11-16T06:12:28.222Z",
+      "runs": [
+        500,
+        499,
+        506
+      ],
+      "avgTime": 502,
+      "minTime": 499,
+      "maxTime": 506,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.93",
+      "timestamp": "2025-11-16T06:12:29.850Z",
+      "runs": [
+        586,
+        527,
+        515
+      ],
+      "avgTime": 543,
+      "minTime": 515,
+      "maxTime": 586,
+      "stdDev": 31
+    },
+    {
+      "version": "1.0.94",
+      "timestamp": "2025-11-16T06:12:31.384Z",
+      "runs": [
+        508,
+        511,
+        515
+      ],
+      "avgTime": 511,
+      "minTime": 508,
+      "maxTime": 515,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.95",
+      "timestamp": "2025-11-16T06:12:32.920Z",
+      "runs": [
+        505,
+        515,
+        516
+      ],
+      "avgTime": 512,
+      "minTime": 505,
+      "maxTime": 516,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.96",
+      "timestamp": "2025-11-16T06:12:34.978Z",
+      "runs": [
+        502,
+        615,
+        941
+      ],
+      "avgTime": 686,
+      "minTime": 502,
+      "maxTime": 941,
+      "stdDev": 186
+    },
+    {
+      "version": "1.0.98",
+      "timestamp": "2025-11-16T06:12:36.570Z",
+      "runs": [
+        571,
+        518,
+        503
+      ],
+      "avgTime": 531,
+      "minTime": 503,
+      "maxTime": 571,
+      "stdDev": 29
+    },
+    {
+      "version": "1.0.100",
+      "timestamp": "2025-11-16T06:12:38.094Z",
+      "runs": [
+        509,
+        505,
+        510
+      ],
+      "avgTime": 508,
+      "minTime": 505,
+      "maxTime": 510,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.102",
+      "timestamp": "2025-11-16T06:12:39.619Z",
+      "runs": [
+        504,
+        512,
+        509
+      ],
+      "avgTime": 508,
+      "minTime": 504,
+      "maxTime": 512,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.103",
+      "timestamp": "2025-11-16T06:12:41.123Z",
+      "runs": [
+        506,
+        502,
+        496
+      ],
+      "avgTime": 501,
+      "minTime": 496,
+      "maxTime": 506,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.105",
+      "timestamp": "2025-11-16T06:12:42.651Z",
+      "runs": [
+        506,
+        512,
+        510
+      ],
+      "avgTime": 509,
+      "minTime": 506,
+      "maxTime": 512,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.106",
+      "timestamp": "2025-11-16T06:12:44.187Z",
+      "runs": [
+        516,
+        511,
+        509
+      ],
+      "avgTime": 512,
+      "minTime": 509,
+      "maxTime": 516,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.107",
+      "timestamp": "2025-11-16T06:12:45.715Z",
+      "runs": [
+        511,
+        511,
+        506
+      ],
+      "avgTime": 509,
+      "minTime": 506,
+      "maxTime": 511,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.108",
+      "timestamp": "2025-11-16T06:12:47.246Z",
+      "runs": [
+        518,
+        513,
+        500
+      ],
+      "avgTime": 510,
+      "minTime": 500,
+      "maxTime": 518,
+      "stdDev": 8
+    },
+    {
+      "version": "1.0.109",
+      "timestamp": "2025-11-16T06:12:48.759Z",
+      "runs": [
+        508,
+        500,
+        505
+      ],
+      "avgTime": 504,
+      "minTime": 500,
+      "maxTime": 508,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.110",
+      "timestamp": "2025-11-16T06:12:50.318Z",
+      "runs": [
+        501,
+        545,
+        513
+      ],
+      "avgTime": 520,
+      "minTime": 501,
+      "maxTime": 545,
+      "stdDev": 19
+    },
+    {
+      "version": "1.0.111",
+      "timestamp": "2025-11-16T06:12:51.861Z",
+      "runs": [
+        511,
+        516,
+        516
+      ],
+      "avgTime": 514,
+      "minTime": 511,
+      "maxTime": 516,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.112",
+      "timestamp": "2025-11-16T06:12:53.397Z",
+      "runs": [
+        516,
+        513,
+        507
+      ],
+      "avgTime": 512,
+      "minTime": 507,
+      "maxTime": 516,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.113",
+      "timestamp": "2025-11-16T06:12:55.078Z",
+      "runs": [
+        514,
+        504,
+        663
+      ],
+      "avgTime": 560,
+      "minTime": 504,
+      "maxTime": 663,
+      "stdDev": 73
+    },
+    {
+      "version": "1.0.114",
+      "timestamp": "2025-11-16T06:12:56.596Z",
+      "runs": [
+        503,
+        506,
+        509
+      ],
+      "avgTime": 506,
+      "minTime": 503,
+      "maxTime": 509,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.115",
+      "timestamp": "2025-11-16T06:12:58.108Z",
+      "runs": [
+        501,
+        506,
+        504
+      ],
+      "avgTime": 504,
+      "minTime": 501,
+      "maxTime": 506,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.116",
+      "timestamp": "2025-11-16T06:12:59.614Z",
+      "runs": [
+        510,
+        497,
+        499
+      ],
+      "avgTime": 502,
+      "minTime": 497,
+      "maxTime": 510,
+      "stdDev": 6
+    },
+    {
+      "version": "1.0.117",
+      "timestamp": "2025-11-16T06:13:01.130Z",
+      "runs": [
+        510,
+        506,
+        499
+      ],
+      "avgTime": 505,
+      "minTime": 499,
+      "maxTime": 510,
+      "stdDev": 5
+    },
+    {
+      "version": "1.0.118",
+      "timestamp": "2025-11-16T06:13:02.645Z",
+      "runs": [
+        508,
+        503,
+        504
+      ],
+      "avgTime": 505,
+      "minTime": 503,
+      "maxTime": 508,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.119",
+      "timestamp": "2025-11-16T06:13:04.466Z",
+      "runs": [
+        512,
+        511,
+        798
+      ],
+      "avgTime": 607,
+      "minTime": 511,
+      "maxTime": 798,
+      "stdDev": 135
+    },
+    {
+      "version": "1.0.120",
+      "timestamp": "2025-11-16T06:13:06.005Z",
+      "runs": [
+        515,
+        517,
+        507
+      ],
+      "avgTime": 513,
+      "minTime": 507,
+      "maxTime": 517,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.122",
+      "timestamp": "2025-11-16T06:13:07.541Z",
+      "runs": [
+        516,
+        513,
+        507
+      ],
+      "avgTime": 512,
+      "minTime": 507,
+      "maxTime": 516,
+      "stdDev": 4
+    },
+    {
+      "version": "1.0.123",
+      "timestamp": "2025-11-16T06:13:09.224Z",
+      "runs": [
+        511,
+        505,
+        667
+      ],
+      "avgTime": 561,
+      "minTime": 505,
+      "maxTime": 667,
+      "stdDev": 75
+    },
+    {
+      "version": "1.0.124",
+      "timestamp": "2025-11-16T06:13:10.814Z",
+      "runs": [
+        533,
+        529,
+        528
+      ],
+      "avgTime": 530,
+      "minTime": 528,
+      "maxTime": 533,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.125",
+      "timestamp": "2025-11-16T06:13:12.702Z",
+      "runs": [
+        630,
+        630,
+        627
+      ],
+      "avgTime": 629,
+      "minTime": 627,
+      "maxTime": 630,
+      "stdDev": 1
+    },
+    {
+      "version": "1.0.126",
+      "timestamp": "2025-11-16T06:13:14.597Z",
+      "runs": [
+        627,
+        634,
+        633
+      ],
+      "avgTime": 631,
+      "minTime": 627,
+      "maxTime": 634,
+      "stdDev": 3
+    },
+    {
+      "version": "1.0.127",
+      "timestamp": "2025-11-16T06:13:16.528Z",
+      "runs": [
+        647,
+        642,
+        642
+      ],
+      "avgTime": 644,
+      "minTime": 642,
+      "maxTime": 647,
+      "stdDev": 2
+    },
+    {
+      "version": "1.0.128",
+      "timestamp": "2025-11-16T06:13:18.664Z",
+      "runs": [
+        643,
+        630,
+        863
+      ],
+      "avgTime": 712,
+      "minTime": 630,
+      "maxTime": 863,
+      "stdDev": 107
+    },
+    {
+      "version": "2.0.0",
+      "timestamp": "2025-11-16T06:13:20.570Z",
+      "runs": [
+        641,
+        632,
+        633
+      ],
+      "avgTime": 635,
+      "minTime": 632,
+      "maxTime": 641,
+      "stdDev": 4
+    },
+    {
+      "version": "2.0.1",
+      "timestamp": "2025-11-16T06:13:22.484Z",
+      "runs": [
+        644,
+        629,
+        641
+      ],
+      "avgTime": 638,
+      "minTime": 629,
+      "maxTime": 644,
+      "stdDev": 6
+    },
+    {
+      "version": "2.0.2",
+      "timestamp": "2025-11-16T06:13:24.490Z",
+      "runs": [
+        641,
+        711,
+        653
+      ],
+      "avgTime": 668,
+      "minTime": 641,
+      "maxTime": 711,
+      "stdDev": 31
+    },
+    {
+      "version": "2.0.3",
+      "timestamp": "2025-11-16T06:13:26.403Z",
+      "runs": [
+        647,
+        633,
+        632
+      ],
+      "avgTime": 637,
+      "minTime": 632,
+      "maxTime": 647,
+      "stdDev": 7
+    },
+    {
+      "version": "2.0.5",
+      "timestamp": "2025-11-16T06:13:28.329Z",
+      "runs": [
+        635,
+        647,
+        644
+      ],
+      "avgTime": 642,
+      "minTime": 635,
+      "maxTime": 647,
+      "stdDev": 5
+    },
+    {
+      "version": "2.0.8",
+      "timestamp": "2025-11-16T06:13:30.206Z",
+      "runs": [
+        631,
+        627,
+        619
+      ],
+      "avgTime": 626,
+      "minTime": 619,
+      "maxTime": 631,
+      "stdDev": 5
+    },
+    {
+      "version": "2.0.9",
+      "timestamp": "2025-11-16T06:13:32.095Z",
+      "runs": [
+        636,
+        625,
+        628
+      ],
+      "avgTime": 630,
+      "minTime": 625,
+      "maxTime": 636,
+      "stdDev": 5
+    },
+    {
+      "version": "2.0.10",
+      "timestamp": "2025-11-16T06:13:34.017Z",
+      "runs": [
+        661,
+        639,
+        622
+      ],
+      "avgTime": 641,
+      "minTime": 622,
+      "maxTime": 661,
+      "stdDev": 16
+    },
+    {
+      "version": "2.0.11",
+      "timestamp": "2025-11-16T06:13:35.910Z",
+      "runs": [
+        642,
+        627,
+        624
+      ],
+      "avgTime": 631,
+      "minTime": 624,
+      "maxTime": 642,
+      "stdDev": 8
+    },
+    {
+      "version": "2.0.12",
+      "timestamp": "2025-11-16T06:13:37.844Z",
+      "runs": [
+        645,
+        644,
+        645
+      ],
+      "avgTime": 645,
+      "minTime": 644,
+      "maxTime": 645,
+      "stdDev": 1
+    },
+    {
+      "version": "2.0.13",
+      "timestamp": "2025-11-16T06:13:39.782Z",
+      "runs": [
+        647,
+        640,
+        651
+      ],
+      "avgTime": 646,
+      "minTime": 640,
+      "maxTime": 651,
+      "stdDev": 5
+    },
+    {
+      "version": "2.0.14",
+      "timestamp": "2025-11-16T06:13:41.760Z",
+      "runs": [
+        654,
+        656,
+        668
+      ],
+      "avgTime": 659,
+      "minTime": 654,
+      "maxTime": 668,
+      "stdDev": 6
+    },
+    {
+      "version": "2.0.15",
+      "timestamp": "2025-11-16T06:13:43.773Z",
+      "runs": [
+        678,
+        673,
+        662
+      ],
+      "avgTime": 671,
+      "minTime": 662,
+      "maxTime": 678,
+      "stdDev": 7
+    },
+    {
+      "version": "2.0.17",
+      "timestamp": "2025-11-16T06:13:45.688Z",
+      "runs": [
+        641,
+        637,
+        637
+      ],
+      "avgTime": 638,
+      "minTime": 637,
+      "maxTime": 641,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.18",
+      "timestamp": "2025-11-16T06:13:47.614Z",
+      "runs": [
+        643,
+        640,
+        643
+      ],
+      "avgTime": 642,
+      "minTime": 640,
+      "maxTime": 643,
+      "stdDev": 1
+    },
+    {
+      "version": "2.0.19",
+      "timestamp": "2025-11-16T06:13:49.578Z",
+      "runs": [
+        652,
+        640,
+        672
+      ],
+      "avgTime": 655,
+      "minTime": 640,
+      "maxTime": 672,
+      "stdDev": 13
+    },
+    {
+      "version": "2.0.20",
+      "timestamp": "2025-11-16T06:13:51.569Z",
+      "runs": [
+        670,
+        645,
+        676
+      ],
+      "avgTime": 664,
+      "minTime": 645,
+      "maxTime": 676,
+      "stdDev": 13
+    },
+    {
+      "version": "2.0.21",
+      "timestamp": "2025-11-16T06:13:53.545Z",
+      "runs": [
+        675,
+        659,
+        642
+      ],
+      "avgTime": 659,
+      "minTime": 642,
+      "maxTime": 675,
+      "stdDev": 13
+    },
+    {
+      "version": "2.0.22",
+      "timestamp": "2025-11-16T06:13:55.501Z",
+      "runs": [
+        654,
+        654,
+        648
+      ],
+      "avgTime": 652,
+      "minTime": 648,
+      "maxTime": 654,
+      "stdDev": 3
+    },
+    {
+      "version": "2.0.23",
+      "timestamp": "2025-11-16T06:13:57.451Z",
+      "runs": [
+        659,
+        647,
+        644
+      ],
+      "avgTime": 650,
+      "minTime": 644,
+      "maxTime": 659,
+      "stdDev": 6
+    },
+    {
+      "version": "2.0.24",
+      "timestamp": "2025-11-16T06:13:59.420Z",
+      "runs": [
+        659,
+        655,
+        655
+      ],
+      "avgTime": 656,
+      "minTime": 655,
+      "maxTime": 659,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.25",
+      "timestamp": "2025-11-16T06:14:01.401Z",
+      "runs": [
+        662,
+        658,
+        661
+      ],
+      "avgTime": 660,
+      "minTime": 658,
+      "maxTime": 662,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.26",
+      "timestamp": "2025-11-16T06:14:03.818Z",
+      "runs": [
+        726,
+        1024,
+        667
+      ],
+      "avgTime": 806,
+      "minTime": 667,
+      "maxTime": 1024,
+      "stdDev": 156
+    },
+    {
+      "version": "2.0.27",
+      "timestamp": "2025-11-16T06:14:05.768Z",
+      "runs": [
+        648,
+        649,
+        653
+      ],
+      "avgTime": 650,
+      "minTime": 648,
+      "maxTime": 653,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.28",
+      "timestamp": "2025-11-16T06:14:07.719Z",
+      "runs": [
+        648,
+        661,
+        642
+      ],
+      "avgTime": 650,
+      "minTime": 642,
+      "maxTime": 661,
+      "stdDev": 8
+    },
+    {
+      "version": "2.0.29",
+      "timestamp": "2025-11-16T06:14:09.679Z",
+      "runs": [
+        655,
+        654,
+        651
+      ],
+      "avgTime": 653,
+      "minTime": 651,
+      "maxTime": 655,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.30",
+      "timestamp": "2025-11-16T06:14:11.665Z",
+      "runs": [
+        681,
+        656,
+        649
+      ],
+      "avgTime": 662,
+      "minTime": 649,
+      "maxTime": 681,
+      "stdDev": 14
+    },
+    {
+      "version": "2.0.31",
+      "timestamp": "2025-11-16T06:14:13.622Z",
+      "runs": [
+        657,
+        651,
+        648
+      ],
+      "avgTime": 652,
+      "minTime": 648,
+      "maxTime": 657,
+      "stdDev": 4
+    },
+    {
+      "version": "2.0.32",
+      "timestamp": "2025-11-16T06:14:15.590Z",
+      "runs": [
+        656,
+        658,
+        654
+      ],
+      "avgTime": 656,
+      "minTime": 654,
+      "maxTime": 658,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.33",
+      "timestamp": "2025-11-16T06:14:17.567Z",
+      "runs": [
+        655,
+        661,
+        660
+      ],
+      "avgTime": 659,
+      "minTime": 655,
+      "maxTime": 661,
+      "stdDev": 3
+    },
+    {
+      "version": "2.0.34",
+      "timestamp": "2025-11-16T06:14:19.540Z",
+      "runs": [
+        659,
+        653,
+        660
+      ],
+      "avgTime": 657,
+      "minTime": 653,
+      "maxTime": 660,
+      "stdDev": 3
+    },
+    {
+      "version": "2.0.35",
+      "timestamp": "2025-11-16T06:14:21.553Z",
+      "runs": [
+        668,
+        669,
+        676
+      ],
+      "avgTime": 671,
+      "minTime": 668,
+      "maxTime": 676,
+      "stdDev": 4
+    },
+    {
+      "version": "2.0.36",
+      "timestamp": "2025-11-16T06:14:23.553Z",
+      "runs": [
+        673,
+        664,
+        662
+      ],
+      "avgTime": 666,
+      "minTime": 662,
+      "maxTime": 673,
+      "stdDev": 5
+    },
+    {
+      "version": "2.0.37",
+      "timestamp": "2025-11-16T06:14:25.555Z",
+      "runs": [
+        668,
+        676,
+        658
+      ],
+      "avgTime": 667,
+      "minTime": 658,
+      "maxTime": 676,
+      "stdDev": 7
+    },
+    {
+      "version": "2.0.41",
+      "timestamp": "2025-11-16T06:14:27.238Z",
+      "runs": [
+        558,
+        564,
+        561
+      ],
+      "avgTime": 561,
+      "minTime": 558,
+      "maxTime": 564,
+      "stdDev": 2
+    },
+    {
+      "version": "2.0.42",
+      "timestamp": "2025-11-16T06:14:28.945Z",
+      "runs": [
+        567,
+        558,
+        582
+      ],
+      "avgTime": 569,
+      "minTime": 558,
+      "maxTime": 582,
+      "stdDev": 10
+    }
+  ],
+  "benchmarkRuns": 3,
+  "totalVersions": 249
+}

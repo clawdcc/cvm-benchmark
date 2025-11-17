@@ -1,0 +1,38 @@
+{
+  "data": {
+    "version": "0.2.52",
+    "results": [
+      {
+        "time": 545,
+        "result": "error_detected",
+        "reason": "needs update",
+        "minVersionRequired": "1.0.24",
+        "errorMessage": "It looks like your version of Claude Code (0.2.52) needs an update.\r\nA newer version (1.0.24 or higher) is required to continue.\r\n\r\nTo update, please run:\r\n    claude update",
+        "sessionId": null
+      },
+      {
+        "time": 587,
+        "result": "error_detected",
+        "reason": "needs update",
+        "minVersionRequired": "1.0.24",
+        "errorMessage": "It looks like your version of Claude Code (0.2.52) needs an update.\r\nA newer version (1.0.24 or higher) is required to continue.\r\n\r\nTo update, please run:\r\n    claude update",
+        "sessionId": null
+      },
+      {
+        "time": 613,
+        "result": "error_detected",
+        "reason": "needs update",
+        "minVersionRequired": "1.0.24",
+        "errorMessage": "It looks like your version of Claude Code (0.2.52) needs an update.\r\nA newer version (1.0.24 or higher) is required to continue.\r\n\r\nTo update, please run:\r\n    claude update",
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "0.2.52",
+    "avg": 581.6666666666666,
+    "min": 545,
+    "max": 613,
+    "result": "error_detected"
+  }
+}

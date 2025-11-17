@@ -2,9 +2,9 @@
 node_modules/
 package-lock.json
 
-# Benchmark data
-benchmarks/
+# Benchmark data (keep benchmarks/ directory with run data)
 *.json
+!benchmarks/**/*.json
 *.html
 
 # OS

@@ -1,0 +1,44 @@
+{
+  "data": {
+    "version": "1.0.14",
+    "results": [
+      {
+        "time": 1013,
+        "result": "error_detected",
+        "reason": "needs update",
+        "minVersionRequired": "1.0.24",
+        "errorMessage": "It looks like your version of Claude Code (1.0.14) needs an update.\r\nA newer version (1.0.24 or higher) is required to continue.\r\n\r\nTo update, please run:\r\n    claude update",
+        "sessionId": null
+      },
+      {
+        "time": 1155,
+        "result": "ready",
+        "reason": "all terminal signals received and process stable",
+        "signals": {
+          "bracketedPaste": true,
+          "focusEvents": true,
+          "prompt": true
+        },
+        "sessionId": null
+      },
+      {
+        "time": 1138,
+        "result": "ready",
+        "reason": "all terminal signals received and process stable",
+        "signals": {
+          "bracketedPaste": true,
+          "focusEvents": true,
+          "prompt": true
+        },
+        "sessionId": null
+      }
+    ]
+  },
+  "analysis": {
+    "version": "1.0.14",
+    "avg": 1102,
+    "min": 1013,
+    "max": 1155,
+    "result": "error_detected"
+  }
+}

@@ -11,59 +11,69 @@ const compareRuns = require('./lib/compare-runs');
 const comprehensiveSuite = require('./lib/comprehensive-suite');
 
 module.exports = {
-  name: 'benchmark',
-  version: require('./package.json').version,
-  description: 'Benchmark and analyze Claude Code performance',
+  metadata: {
+    name: 'benchmark',
+    version: require('./package.json').version,
+    description: 'Benchmark and analyze Claude Code performance',
+    author: 'clawdcc'
+  },
 
-  // CVM Plugin API
+  // Lifecycle hooks
+  afterInstall: async (version, context) => {
+    console.log(`📊 You can now benchmark version ${version}`);
+    console.log('   Run: cvm benchmark ${version}');
+  },
+
+  // Custom commands
   commands: [
     {
       name: 'benchmark',
-      description: 'Benchmark Claude Code startup time',
-      options: [
-        { flag: '--version-only', description: 'Run --version spawn test only' },
-        { flag: '--interactive-only', description: 'Run interactive PTY test only' },
-        { flag: '--all', description: 'Benchmark all installed versions' },
-        { flag: '--runs <n>', description: 'Number of runs per version (default: 3)' },
-        { flag: '--compare <runs...>', description: 'Compare multiple benchmark runs' }
-      ],
-      action: async (version, options) => {
+      description: 'Benchmark Claude Code startup time (usage: cvm benchmark <version> [options])',
+      handler: async (args, context) => {
+        const version = args[0];
+        const flags = args.slice(1);
+
+        // Parse flags
+        const options = {
+          compare: flags.includes('--compare'),
+          all: flags.includes('--all'),
+          versionOnly: flags.includes('--version-only'),
+          interactiveOnly: flags.includes('--interactive-only'),
+          runs: parseInt(flags.find((f, i) => flags[i - 1] === '--runs') || '3')
+        };
+
         if (options.compare) {
-          return compareRuns.compare(options.compare);
+          const runs = flags.filter(f => !f.startsWith('--'));
+          return compareRuns.compare(runs);
         }
 
         if (options.all) {
           return comprehensiveSuite.runAll(options);
         }
 
+        if (!version) {
+          console.error('❌ Version required');
+          console.log('\nUsage:');
+          console.log('  cvm benchmark <version>              # Benchmark specific version');
+          console.log('  cvm benchmark --all                  # Benchmark all versions');
+          console.log('  cvm benchmark --compare 1 2          # Compare runs');
+          return;
+        }
+
         if (options.versionOnly) {
-          return benchmarkVersion.run(version, options.runs || 3);
+          return benchmarkVersion.benchmarkVersion(version);
         }
 
         if (options.interactiveOnly) {
-          return benchmarkInteractive.run(version, options.runs || 3);
+          return benchmarkInteractive.run(version, options.runs);
         }
 
-        // Default: Run both
-        console.log('🚀 Running comprehensive benchmark...\n');
-        const versionResult = await benchmarkVersion.run(version, options.runs || 3);
-        const interactiveResult = await benchmarkInteractive.run(version, options.runs || 3);
-
-        return {
-          version: versionResult,
-          interactive: interactiveResult
-        };
+        // Default: Run interactive benchmark
+        console.log('🚀 Running interactive startup benchmark...\n');
+        return benchmarkInteractive.run(version, options.runs);
       }
     }
-  ],
-
-  // Optional lifecycle hooks
-  hooks: {
-    afterInstall: (version) => {
-      console.log(`📊 Benchmark plugin: You can now benchmark version ${version}`);
-      console.log('   Run: cvm benchmark <version>');
-    }
-  }
+  ]
 };
 
 // Allow running standalone

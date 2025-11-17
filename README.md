@@ -95,9 +95,14 @@ node lib/comprehensive-suite.js 3
 
 ## Output Structure
 
+All benchmark data is stored in `~/.cvm/benchmarks/`:
+
 ```
-benchmarks/
-├── run-1/
+~/.cvm/benchmarks/
+├── benchmarks-all-3run.json          # --version benchmarks for all versions
+├── benchmark-startup-{version}.json  # Individual interactive benchmarks
+├── STARTUP_COMPARISON.html           # Generated performance report
+├── run-1/                            # Multi-run comparison data
 │   ├── version/
 │   │   └── benchmarks-all-3run.json
 │   ├── interactive/

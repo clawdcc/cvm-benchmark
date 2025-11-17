@@ -13,36 +13,50 @@ Comprehensive benchmarking and performance analysis tools for Claude Code versio
 
 ## Installation
 
-```bash
-# Install as CVM plugin
-cvm plugin install @clawdcc/cvm-benchmark
+### Method 1: NPM + Symlink (Recommended)
 
-# Or install globally
+```bash
+# Install via NPM
 npm install -g @clawdcc/cvm-benchmark
+
+# Link to CVM plugins directory
+ln -s $(npm root -g)/@clawdcc/cvm-benchmark/index.js ~/.cvm/plugins/benchmark.js
+
+# Verify installation
+cvm plugins
+```
+
+### Method 2: Direct Clone
+
+```bash
+# Clone into a local directory
+git clone https://github.com/clawdcc/cvm-benchmark.git
+cd cvm-benchmark
+npm install
+
+# Link to CVM
+ln -s $(pwd)/index.js ~/.cvm/plugins/benchmark.js
+
+# Verify
+cvm plugins
 ```
 
 ## Usage
 
-### As CVM Plugin
+### As CVM Plugin (Primary Method)
 
 ```bash
-# Benchmark a specific version
+# Benchmark a specific version (interactive startup test)
 cvm benchmark 2.0.42
 
 # Benchmark all installed versions
 cvm benchmark --all
 
-# Run only --version tests
-cvm benchmark 2.0.42 --version-only
-
-# Run only interactive PTY tests
-cvm benchmark 2.0.42 --interactive-only
-
-# Custom number of runs
-cvm benchmark 2.0.42 --runs 5
-
 # Compare multiple benchmark runs
-cvm benchmark --compare 1 2 3
+cvm benchmark --compare 1 2
+
+# Check loaded plugins
+cvm plugins
 ```
 
 ### Standalone Usage

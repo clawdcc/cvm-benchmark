@@ -1,0 +1,40 @@
+{
+  "name": "@clawdcc/cvm-benchmark",
+  "version": "0.1.1",
+  "description": "Comprehensive benchmarking and performance analysis tools for Claude Code versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node lib/benchmark-version.js --test"
+  },
+  "keywords": [
+    "cvm",
+    "claude",
+    "claude-code",
+    "benchmark",
+    "performance",
+    "analysis",
+    "version-testing"
+  ],
+  "author": "clawdcc",
+  "license": "MIT",
+  "homepage": "https://clawd.cc/cvm-benchmark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clawdcc/cvm-benchmark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clawdcc/cvm-benchmark/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
+}

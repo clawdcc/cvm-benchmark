@@ -1,6 +1,6 @@
 {
   "name": "@clawdcc/cvm-benchmark",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Comprehensive benchmarking and performance analysis tools for Claude Code versions",
   "main": "index.js",
   "scripts": {

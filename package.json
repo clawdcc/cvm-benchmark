@@ -19,6 +19,7 @@
     "benchmark:suite": "node dist/cli.js suite",
     "benchmark:update": "node scripts/update-benchmarks.js",
     "benchmark:all": "vitest run tests/integration.test.ts",
+    "benchmark:full": "node scripts/full-benchmark.js",
     "report:generate": "node dist/cli.js report"
   },
   "keywords": [

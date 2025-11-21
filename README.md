@@ -93,6 +93,18 @@ node lib/comprehensive-suite.js 3
 - Measures real interactive startup time
 - Cleans up session files after each run
 
+**Trust Prompt Handling:**
+- Benchmark runs with `cwd: process.cwd()` (directory where script runs)
+- Older versions (0.2.x, 1.0.x) show "Do you trust the files" security prompt
+- Auto-accepts trust prompt by sending Enter key to proceed
+- Each version spawns fresh in the benchmark directory
+
+**Version Requirement Detection:**
+- Detects versions < 1.0.24 that show "needs update" error
+- Extracts minimum version requirement (expected: 1.0.24)
+- Returns `result: 'error_detected'` with full error message
+- Warns if minimum version changes from 1.0.24
+
 ## Output Structure
 
 All benchmark data is stored in `~/.cvm/benchmarks/`:

@@ -1,8 +1,0 @@
-{
-  "runNumber": "2",
-  "timestamp": "2025-11-17T03:24:20.094Z",
-  "versionBenchmarks": true,
-  "interactiveBenchmarks": 245,
-  "totalVersions": 245,
-  "notes": "Benchmark run 2 - Runs 1-2 based on ~/.claude with ~1GB of chat history files"
-}

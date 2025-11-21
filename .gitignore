@@ -1,10 +1,12 @@
 # Dependencies
 node_modules/
-package-lock.json
 
 # Benchmark data (keep benchmarks/ directory with run data)
 *.json
 !benchmarks/**/*.json
+!package.json
+!tsconfig.json
+!tsup.config.ts
 *.html
 
 # OS
@@ -27,6 +29,13 @@ coverage/
 
 # Build
 dist/
+
+# Old JavaScript files (during migration)
+lib/
+index.js
+orchestrate-benchmarks.js
+run-interactive-benchmarks.js
+*.sh
 
 # Temporary files
 tmp/

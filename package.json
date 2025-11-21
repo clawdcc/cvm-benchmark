@@ -1,10 +1,23 @@
 {
   "name": "@clawdcc/cvm-benchmark",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Comprehensive benchmarking and performance analysis tools for Claude Code versions",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "cvm-benchmark": "./bin/cvm-benchmark.js"
+  },
   "scripts": {
-    "test": "node lib/benchmark-version.js --test"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "benchmark:run": "node dist/cli.js run",
+    "benchmark:suite": "node dist/cli.js suite",
+    "benchmark:update": "node scripts/update-benchmarks.js",
+    "report:generate": "node dist/cli.js report"
   },
   "keywords": [
     "cvm",
@@ -26,14 +39,24 @@
     "url": "https://github.com/clawdcc/cvm-benchmark/issues"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "dependencies": {
-    "node-pty": "^1.0.0"
+    "node-pty": "^1.0.0",
+    "commander": "^11.1.0",
+    "zod": "^3.22.4",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.1",
+    "@types/node": "^20.10.6",
+    "vitest": "^1.0.4"
   },
   "files": [
-    "index.js",
-    "lib",
+    "dist",
+    "bin",
     "README.md",
     "LICENSE"
   ]

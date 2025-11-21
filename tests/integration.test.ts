@@ -5,11 +5,14 @@
  * It validates the tool works correctly while producing real benchmark data.
  *
  * Usage:
- *   npm run test:integration              # Run with defaults (all versions)
+ *   npm run test:integration              # Run with defaults (all versions, 3 samples)
  *   BENCH_FROM=2.0.40 npm run test:integration  # From specific version
  *   BENCH_TO=2.0.50 npm run test:integration    # To specific version
  *   BENCH_LIMIT=10 npm run test:integration     # Limit to N versions
- *   BENCH_RUNS=5 npm run test:integration       # X runs per version
+ *   BENCH_SAMPLES=5 npm run test:integration    # Take 5 samples per benchmark (for averaging)
+ *
+ * Note: This runs ONE complete suite with SAMPLES taken per benchmark.
+ * For multiple suite runs (e.g., "2 runs of 3 samples"), use scripts/update-benchmarks.js
  */
 
 import { describe, it, expect } from 'vitest';
@@ -24,7 +27,7 @@ import path from 'path';
 const FROM_VERSION = process.env.BENCH_FROM; // e.g., "2.0.40"
 const TO_VERSION = process.env.BENCH_TO;     // e.g., "2.0.50"
 const LIMIT = process.env.BENCH_LIMIT ? parseInt(process.env.BENCH_LIMIT) : undefined;
-const RUNS = process.env.BENCH_RUNS ? parseInt(process.env.BENCH_RUNS) : 2;
+const SAMPLES = process.env.BENCH_SAMPLES ? parseInt(process.env.BENCH_SAMPLES) : 3; // Samples per benchmark (for averaging)
 
 describe('Integration: Full Benchmark Suite', () => {
   it('should run complete benchmark workflow and produce valid data', async () => {
@@ -35,13 +38,13 @@ describe('Integration: Full Benchmark Suite', () => {
     console.log(`  From: ${FROM_VERSION || 'first available'}`);
     console.log(`  To: ${TO_VERSION || 'latest'}`);
     console.log(`  Limit: ${LIMIT || 'none'}`);
-    console.log(`  Runs per version: ${RUNS}`);
+    console.log(`  Samples per benchmark: ${SAMPLES} (for averaging)`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
     // Build configuration
     const config: BenchmarkConfig = {
       benchmark: {
-        runsPerVersion: RUNS,
+        runsPerVersion: SAMPLES,
         timeout: 120000,
         runBoth: true,
       },
@@ -107,17 +110,17 @@ describe('Integration: Full Benchmark Suite', () => {
 
       // Verify version spawn benchmark
       expect(versionResult.versionSpawn).toBeDefined();
-      expect(versionResult.versionSpawn.runs).toBe(RUNS);
+      expect(versionResult.versionSpawn.runs).toBe(SAMPLES);
       expect(versionResult.versionSpawn.avg).toBeGreaterThan(0);
       expect(versionResult.versionSpawn.min).toBeGreaterThan(0);
       expect(versionResult.versionSpawn.max).toBeGreaterThan(0);
-      expect(versionResult.versionSpawn.results).toHaveLength(RUNS);
+      expect(versionResult.versionSpawn.results).toHaveLength(SAMPLES);
 
       // Verify interactive benchmark (if successful)
       if (versionResult.status === 'success') {
         expect(versionResult.interactive).toBeDefined();
-        expect(versionResult.interactive.runs).toBe(RUNS);
-        expect(versionResult.interactive.results).toHaveLength(RUNS);
+        expect(versionResult.interactive.runs).toBe(SAMPLES);
+        expect(versionResult.interactive.results).toHaveLength(SAMPLES);
 
         for (const run of versionResult.interactive.results) {
           expect(run.result).toBeDefined();

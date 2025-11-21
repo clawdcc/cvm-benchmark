@@ -24,11 +24,14 @@ Control benchmarks via environment variables:
 | `BENCH_FROM` | Minimum version to test | `2.0.40` | first available |
 | `BENCH_TO` | Maximum version to test | `2.0.50` | latest |
 | `BENCH_LIMIT` | Limit to N latest versions | `10` | none |
-| `BENCH_RUNS` | Runs per version (X of Y) | `5` | `2` |
+| `BENCH_SAMPLES` | Samples per benchmark (for averaging) | `5` | `3` |
+
+**Note:** The integration test runs ONE complete suite with SAMPLES taken per benchmark.
+For multiple suite runs (e.g., "2 runs of 3 samples"), use `npm run benchmark:update`.
 
 ## Examples
 
-### Quick validation (5 versions, 2 runs each)
+### Quick validation (5 versions, 3 samples each)
 ```bash
 BENCH_LIMIT=5 npm run test:integration
 ```
@@ -38,9 +41,15 @@ BENCH_LIMIT=5 npm run test:integration
 BENCH_FROM=2.0.0 BENCH_TO=2.0.50 npm run test:integration
 ```
 
-### High-precision benchmark (5 runs per version)
+### High-precision benchmark (5 samples per benchmark)
 ```bash
-BENCH_LIMIT=10 BENCH_RUNS=5 npm run test:integration
+BENCH_LIMIT=10 BENCH_SAMPLES=5 npm run test:integration
+```
+
+### Multiple Suite Runs (2 runs of 3 samples)
+```bash
+# Use the update script for multiple runs
+BENCH_RUNS=2 BENCH_SAMPLES=3 npm run benchmark:update
 ```
 
 ### Full production benchmark (all versions)

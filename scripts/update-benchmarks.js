@@ -8,13 +8,20 @@
  * 1. Load existing benchmark history from data/benchmarks.json
  * 2. Get all installed CVM versions
  * 3. Identify new versions not yet benchmarked
- * 4. Run 2 benchmark runs with 3 requests each (2x3 = 6 total runs per version)
+ * 4. Run X benchmark runs with Y samples each (configurable via env vars)
  * 5. Append new results to existing data
  * 6. Save updated benchmarks.json
  *
+ * Environment Variables:
+ *   BENCH_RUNS=2    # Number of complete suite runs (default: 2)
+ *   BENCH_SAMPLES=3 # Samples per benchmark for averaging (default: 3)
+ *
  * Usage:
- *   npm run benchmark:update
- *   npm run benchmark:update -- --force  # Re-benchmark all versions
+ *   npm run benchmark:update                           # 2 runs of 3 samples (default)
+ *   BENCH_RUNS=5 npm run benchmark:update             # 5 runs of 3 samples
+ *   BENCH_SAMPLES=5 npm run benchmark:update          # 2 runs of 5 samples
+ *   BENCH_RUNS=3 BENCH_SAMPLES=5 npm run benchmark:update  # 3 runs of 5 samples
+ *   npm run benchmark:update -- --force                # Re-benchmark all versions
  */
 
 import { spawn } from 'child_process';
@@ -28,9 +35,11 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const BENCHMARKS_FILE = path.join(DATA_DIR, 'benchmarks.json');
 
-// Parse CLI args
+// Parse CLI args and environment
 const args = process.argv.slice(2);
 const FORCE_REBENCHMARK = args.includes('--force');
+const BENCH_RUNS = process.env.BENCH_RUNS ? parseInt(process.env.BENCH_RUNS) : 2;  // Number of suite runs
+const BENCH_SAMPLES = process.env.BENCH_SAMPLES ? parseInt(process.env.BENCH_SAMPLES) : 3; // Samples per benchmark
 
 /**
  * Load existing benchmark data
@@ -93,16 +102,16 @@ async function getInstalledVersions() {
 }
 
 /**
- * Run benchmark for specific versions
+ * Run benchmark for specific versions with given samples
  */
-async function runBenchmark(versions) {
+async function runBenchmark(versions, samples = 3) {
   return new Promise((resolve, reject) => {
     const args = [
       'run',
       '--include',
       ...versions,
       '--runs',
-      '3',
+      String(samples),
       '--no-cleanup',
     ];
 
@@ -227,15 +236,15 @@ async function main() {
     toBenchmark.forEach(v => console.log(`   - ${v}`));
   }
 
-  // Run 2 benchmark runs
-  console.log('\n📊 Running 2 benchmark runs (3 requests each)...\n');
+  // Run X benchmark runs with Y samples each
+  console.log(`\n📊 Running ${BENCH_RUNS} benchmark runs (${BENCH_SAMPLES} samples each)...\n`);
 
-  for (let i = 1; i <= 2; i++) {
+  for (let i = 1; i <= BENCH_RUNS; i++) {
     console.log(`\n${'='.repeat(60)}`);
-    console.log(`🔄 Benchmark Run ${i}/2`);
+    console.log(`🔄 Benchmark Run ${i}/${BENCH_RUNS}`);
     console.log('='.repeat(60));
 
-    await runBenchmark(toBenchmark);
+    await runBenchmark(toBenchmark, BENCH_SAMPLES);
 
     // Load and merge results
     const newResults = await loadLatestBenchmarkRun();

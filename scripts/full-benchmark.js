@@ -90,7 +90,7 @@ function exec(command, args = [], options = {}) {
 async function getAvailableVersions() {
   console.log('📋 Fetching available Claude Code versions from npm...');
 
-  const { stdout } = await exec('cvm', ['list-remote', '--json'], { silent: true });
+  const { stdout } = await exec('cvm', ['list-remote'], { silent: true });
 
   try {
     const data = JSON.parse(stdout);
@@ -113,7 +113,7 @@ async function getAvailableVersions() {
  * Get currently installed versions
  */
 async function getInstalledVersions() {
-  const { stdout } = await exec('cvm', ['list', '--json'], { silent: true });
+  const { stdout } = await exec('cvm', ['list'], { silent: true });
 
   try {
     const data = JSON.parse(stdout);

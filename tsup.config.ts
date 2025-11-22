@@ -4,6 +4,7 @@ export default defineConfig({
   entry: {
     cli: 'src/cli.ts',
     index: 'src/index.ts',
+    'benchmarks/interactive-worker': 'src/benchmarks/interactive-worker.ts',
   },
   format: ['esm'],
   dts: true,

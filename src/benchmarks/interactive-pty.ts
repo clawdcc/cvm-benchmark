@@ -39,13 +39,26 @@ export async function benchmarkInteractive(
     let trustPromptHandled = false;
 
     // Spawn Claude in PTY
-    const ptyProcess = pty.spawn(claudePath, [], {
-      name: 'xterm-256color',
-      cols: 80,
-      rows: 30,
-      cwd,
-      env: process.env as Record<string, string>,
-    });
+    let ptyProcess;
+    try {
+      ptyProcess = pty.spawn(claudePath, [], {
+        name: 'xterm-256color',
+        cols: 80,
+        rows: 30,
+        cwd,
+        env: process.env,
+      });
+    } catch (error) {
+      // Spawn failed synchronously
+      resolve({
+        time: Date.now() - startTime,
+        result: 'failed',
+        reason: `PTY spawn failed: ${error instanceof Error ? error.message : String(error)}`,
+        signals,
+        sessionId,
+      });
+      return;
+    }
 
     // Timeout handler
     const timeoutId = setTimeout(() => {

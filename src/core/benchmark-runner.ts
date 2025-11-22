@@ -1,6 +1,7 @@
 import type { BenchmarkConfig } from '../types/config.js';
 import type {
   BenchmarkSuiteResult,
+  BenchmarkRunResult,
   CombinedBenchmarkResult,
   InteractiveBenchmarkResult,
   VersionBenchmarkResult,
@@ -8,11 +9,14 @@ import type {
 import { VersionManager } from './version-manager.js';
 import { ResultStore } from '../storage/result-store.js';
 import { benchmarkVersion } from '../benchmarks/version-spawn.js';
-import { benchmarkInteractive } from '../benchmarks/interactive-pty.js';
 import { filterVersions, describeVersionFilter } from '../utils/version-filter.js';
 import { cleanupSessions } from '../utils/cleanup.js';
 import { logger } from '../utils/logger.js';
 import { ProgressTracker } from '../utils/progress.js';
+import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import { existsSync } from 'fs';
 
 export class BenchmarkRunner {
   private versionManager: VersionManager;
@@ -21,6 +25,59 @@ export class BenchmarkRunner {
   constructor(_config?: Partial<BenchmarkConfig>) {
     this.versionManager = new VersionManager();
     this.resultStore = new ResultStore();
+  }
+
+  /**
+   * Run interactive benchmark in a separate process to avoid node-pty threading bugs
+   */
+  private async benchmarkInteractiveIsolated(
+    claudePath: string,
+    cwd: string,
+    timeout: number
+  ): Promise<BenchmarkRunResult> {
+    return new Promise((resolve, reject) => {
+      // Find the worker script in dist/ (works for both test and production)
+      // When running via vitest, we're in src/, so go up to project root then into dist/
+      // When running from dist/, we're already in dist/, so go up to project root then into dist/
+      const currentFile = fileURLToPath(import.meta.url);
+      const currentDir = dirname(currentFile);
+
+      // Find project root (has package.json)
+      let projectRoot = currentDir;
+      while (!existsSync(join(projectRoot, 'package.json'))) {
+        const parent = dirname(projectRoot);
+        if (parent === projectRoot) throw new Error('Could not find project root');
+        projectRoot = parent;
+      }
+
+      const workerScript = join(projectRoot, 'dist/benchmarks/interactive-worker.js');
+
+      // Use process.execPath to ensure worker uses the same Node version as parent
+      const proc = spawn(process.execPath, [workerScript, claudePath, cwd, String(timeout)], {
+        stdio: ['ignore', 'pipe', 'pipe'],
+      });
+
+      let stdout = '';
+      let stderr = '';
+
+      proc.stdout.on('data', (data) => { stdout += data.toString(); });
+      proc.stderr.on('data', (data) => { stderr += data.toString(); });
+
+      proc.on('close', (code) => {
+        if (code === 0 && stdout) {
+          try {
+            const result = JSON.parse(stdout);
+            resolve(result);
+          } catch (error) {
+            reject(new Error(`Failed to parse benchmark result: ${error}`));
+          }
+        } else {
+          reject(new Error(`Benchmark worker failed with code ${code}: ${stderr}`));
+        }
+      });
+
+      proc.on('error', reject);
+    });
   }
 
   /**
@@ -177,15 +234,15 @@ export class BenchmarkRunner {
       }
     }
 
-    // Run interactive PTY benchmark
+    // Run interactive PTY benchmark (in separate process to avoid node-pty threading bugs)
     try {
       const runs = [];
       for (let i = 0; i < config.benchmark.runsPerVersion; i++) {
-        const run = await benchmarkInteractive({
+        const run = await this.benchmarkInteractiveIsolated(
           claudePath,
-          cwd: process.cwd(),
-          timeout: config.benchmark.timeout,
-        });
+          process.cwd(),
+          config.benchmark.timeout
+        );
         runs.push(run);
       }
 

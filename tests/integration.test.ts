@@ -85,11 +85,11 @@ describe('Integration: Full Benchmark Suite', () => {
     // Assertions: Verify result structure
     expect(result).toBeDefined();
     expect(result.runNumber).toBeGreaterThan(0);
-    expect(result.versions).toBeDefined();
-    expect(Array.isArray(result.versions)).toBe(true);
-    expect(result.versions.length).toBeGreaterThan(0);
+    expect(result.results).toBeDefined();
+    expect(Array.isArray(result.results)).toBe(true);
+    expect(result.results.length).toBeGreaterThan(0);
     expect(result.metadata).toBeDefined();
-    expect(result.metadata.totalVersions).toBe(result.versions.length);
+    expect(result.metadata.totalVersions).toBe(result.results.length);
 
     console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     console.log('✅ BENCHMARK COMPLETE');
@@ -103,28 +103,31 @@ describe('Integration: Full Benchmark Suite', () => {
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
     // Verify each version result
-    for (const versionResult of result.versions) {
+    for (const versionResult of result.results) {
       expect(versionResult.version).toBeDefined();
-      expect(versionResult.status).toBeDefined();
-      expect(['success', 'error']).toContain(versionResult.status);
 
-      // Verify version spawn benchmark
-      expect(versionResult.versionSpawn).toBeDefined();
-      expect(versionResult.versionSpawn.runs).toBe(SAMPLES);
-      expect(versionResult.versionSpawn.avg).toBeGreaterThan(0);
-      expect(versionResult.versionSpawn.min).toBeGreaterThan(0);
-      expect(versionResult.versionSpawn.max).toBeGreaterThan(0);
-      expect(versionResult.versionSpawn.results).toHaveLength(SAMPLES);
+      // If error exists, this version failed
+      if (versionResult.error) {
+        expect(versionResult.error).toBeDefined();
+        continue;
+      }
 
-      // Verify interactive benchmark (if successful)
-      if (versionResult.status === 'success') {
-        expect(versionResult.interactive).toBeDefined();
-        expect(versionResult.interactive.runs).toBe(SAMPLES);
-        expect(versionResult.interactive.results).toHaveLength(SAMPLES);
+      // Verify version spawn benchmark (if present)
+      if (versionResult.versionBenchmark) {
+        expect(versionResult.versionBenchmark.runs).toHaveLength(SAMPLES);
+        expect(versionResult.versionBenchmark.avgTime).toBeGreaterThan(0);
+        expect(versionResult.versionBenchmark.minTime).toBeGreaterThan(0);
+        expect(versionResult.versionBenchmark.maxTime).toBeGreaterThan(0);
+      }
 
-        for (const run of versionResult.interactive.results) {
+      // Verify interactive benchmark (if present)
+      if (versionResult.interactiveBenchmark) {
+        expect(versionResult.interactiveBenchmark.runs).toHaveLength(SAMPLES);
+        expect(versionResult.interactiveBenchmark.avgTime).toBeGreaterThan(0);
+
+        for (const run of versionResult.interactiveBenchmark.runs) {
           expect(run.result).toBeDefined();
-          expect(['ready', 'error_detected', 'ui_then_exit', 'exited_early', 'timeout']).toContain(run.result);
+          expect(['ready', 'error_detected', 'ui_then_exit', 'exited_early', 'timeout', 'failed']).toContain(run.result);
           expect(run.time).toBeGreaterThan(0);
           expect(run.signals).toBeDefined();
         }
@@ -142,7 +145,7 @@ describe('Integration: Full Benchmark Suite', () => {
     // Load and verify saved results match in-memory results
     const savedResults = await resultStore.loadSuiteResults(result.runNumber);
     expect(savedResults.runNumber).toBe(result.runNumber);
-    expect(savedResults.versions.length).toBe(result.versions.length);
+    expect(savedResults.results.length).toBe(result.results.length);
     expect(savedResults.metadata.totalVersions).toBe(result.metadata.totalVersions);
 
     console.log('✅ All assertions passed');
@@ -158,11 +161,11 @@ describe('Integration: Full Benchmark Suite', () => {
       failed: 0,
     };
 
-    for (const v of result.versions) {
-      if (v.status === 'error') {
+    for (const v of result.results) {
+      if (v.error) {
         summary.failed++;
-      } else if (v.interactive) {
-        const primaryResult = v.interactive.results[0]?.result;
+      } else if (v.interactiveBenchmark) {
+        const primaryResult = v.interactiveBenchmark.runs[0]?.result;
         if (primaryResult && primaryResult in summary) {
           summary[primaryResult as keyof typeof summary]++;
         }

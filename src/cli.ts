@@ -11,7 +11,7 @@ const program = new Command();
 program
   .name('cvm-benchmark')
   .description('Comprehensive benchmarking and performance analysis for Claude Code versions')
-  .version('1.0.3');
+  .version('1.0.4');
 
 /**
  * Helper to handle auto-install logic

@@ -1,6 +1,6 @@
 {
   "name": "@clawdcc/cvm-benchmark",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Comprehensive benchmarking and performance analysis tools for Claude Code versions",
   "type": "module",
   "main": "./dist/index.js",
@@ -43,7 +43,7 @@
     "url": "https://github.com/clawdcc/cvm-benchmark/issues"
   },
   "engines": {
-    "node": ">=18.0.0 <23.0.0"
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "chalk": "^5.3.0",

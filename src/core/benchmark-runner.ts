@@ -83,7 +83,10 @@ export class BenchmarkRunner {
   /**
    * Run benchmark suite for all filtered versions
    */
-  async runSuite(config: BenchmarkConfig): Promise<BenchmarkSuiteResult> {
+  async runSuite(
+    config: BenchmarkConfig,
+    options: { incremental?: boolean } = {}
+  ): Promise<BenchmarkSuiteResult> {
     const startTime = Date.now();
     const runNumber = await this.resultStore.getNextRunNumber();
 
@@ -91,7 +94,18 @@ export class BenchmarkRunner {
 
     // Get and filter versions
     const allVersions = await this.versionManager.getInstalledVersions();
-    const versions = filterVersions(allVersions, config);
+    let versions = filterVersions(allVersions, config);
+
+    // If incremental mode, exclude already benchmarked versions
+    if (options.incremental) {
+      const benchmarked = await this.resultStore.getBenchmarkedVersions();
+      const beforeCount = versions.length;
+      versions = versions.filter(v => !benchmarked.has(v));
+      const skipped = beforeCount - versions.length;
+      if (skipped > 0) {
+        logger.info(`Incremental mode: skipping ${skipped} already benchmarked versions`);
+      }
+    }
 
     logger.info(describeVersionFilter(config, allVersions.length, versions.length));
 

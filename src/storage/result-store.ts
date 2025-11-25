@@ -126,4 +126,33 @@ export class ResultStore {
       return 1;
     }
   }
+
+  /**
+   * Get all versions that have been benchmarked across all runs
+   */
+  async getBenchmarkedVersions(): Promise<Set<string>> {
+    const benchmarked = new Set<string>();
+
+    try {
+      const { readdir } = await import('fs/promises');
+      const entries = await readdir(this.baseDir);
+      const runDirs = entries.filter((f) => f.startsWith('run-'));
+
+      for (const runDir of runDirs) {
+        const results = await this.loadSuiteResults(parseInt(runDir.replace('run-', '')));
+        if (results?.results) {
+          for (const result of results.results) {
+            // Only count as benchmarked if it succeeded (no error)
+            if (!result.error && result.version) {
+              benchmarked.add(result.version);
+            }
+          }
+        }
+      }
+    } catch {
+      // Return empty set if no runs exist
+    }
+
+    return benchmarked;
+  }
 }
